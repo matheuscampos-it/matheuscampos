@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Campos - Engenheiro de Dados & Embaixador Google</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="bg-light text-dark" id="top">
+  <header class="bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#" class="text-decoration-none">
+          <h3 class="m-0 text-primary fw-bold">Matheus Campos</h3>
+        </a>
+        <nav class="d-none d-md-flex nav-menu text-uppercase fw-bold">
+          <a href="#sobre" class="nav-item text-decoration-none text-dark">Sobre</a>
+          <a href="#projetos" class="nav-item text-decoration-none text-dark">Projetos</a>
+          <a href="#conteudos" class="nav-item text-decoration-none text-dark">Conteúdos</a>
+          <a href="#formacao" class="nav-item text-decoration-none text-dark">Formação</a>
+          <a href="#experiencias" class="nav-item text-decoration-none text-dark">Experiências</a>
+          <a href="#habilidades" class="nav-item text-decoration-none text-dark">Habilidades</a>
+          <a href="#contato" class="nav-item text-decoration-none text-dark">Contato</a>
+        </nav>
+        <button class="btn btn-outline-secondary ms-3 theme-toggle-btn">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-primary">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="d-flex flex-column align-items-start">
+         <button class="btn btn-outline-secondary mb-3 theme-toggle-btn">
+            <i class="fas fa-moon"></i> <span class="ms-2">Toggle Theme</span>
+        </button>
+        <a href="#sobre" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Sobre</a>
+        <a href="#projetos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Projetos</a>
+        <a href="#conteudos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Conteúdos</a>
+        <a href="#formacao" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Formação</a>
+        <a href="#experiencias" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Experiências</a>
+        <a href="#habilidades" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Habilidades</a>
+        <a href="#contato" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Contato</a>
+      </nav>
+    </div>
+  </div>
+
+  <section class="py-5 hero-section position-relative" id="sobre">
+    <div class="glass-bg-blur"></div>
+    <div class="container position-relative z-index-1">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <div class="profile-pic mx-auto glass-border floating-anim">
+            <img src="https://i.imgur.com/heJxybF.png" alt="Matheus Campos" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="badge-google-ambassador mb-3 floating-anim-delayed">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G" class="google-g-icon">
+            <span>Estudante Embaixador do Google</span>
+          </div>
+          <h1 class="display-4 fw-bold gradient-text mb-3">Matheus Campos</h1>
+          <h2 class="h4 text-muted mb-4">Engenheiro de Dados | Analista de Dados</h2>
+          <p class="lead mb-4">
+            Transformo dados brutos em ativos de valor e soluções escaláveis. Com sólida base em <strong>Engenharia de Dados (ETL/ELT)</strong>, <strong>Power BI</strong>, <strong>SQL</strong>, <strong>Python</strong> e Governança de TI. Possuo vivência prática na arquitetura de infraestrutura de dados, criação de KPIs e suporte estratégico à gestão corporativa. Além da construção de infraestruturas robustas, meu foco é traduzir dados complexos em histórias visuais (Storytelling) que impulsionam resultados estratégicos para o negócio. Além disso, tenho a honra de representar o ecossistema tecnológico como <strong class="text-google-blue">Estudante Embaixador do Google no Brasil</strong>, explorando inovações em IA (Gemini) e Workspace.
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <div class="contact-info glass-pill">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>campos98matheus@gmail.com</span>
+            </div>
+            <div class="contact-info glass-pill">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>(35) 98422-8704</span>
+            </div>
+            <div class="contact-info glass-pill">
+              <i class="fab fa-linkedin contact-icon"></i>
+              <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="text-decoration-none text-reset">/matheus-campos-it</a>
+            </div>
+          </div>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#experiencias" class="btn btn-primary px-4 py-2 animated-btn glass-btn">Ver Trajetória</a>
+            <a href="Curriculo_Matheus_Campos.pdf" target="_blank" class="btn btn-danger px-4 py-2 animated-btn glass-btn"><i class="fas fa-file-pdf me-2"></i>Baixar Currículo (PDF)</a>
+            <a href="#contato" class="btn btn-outline-primary px-4 py-2 glass-btn-outline">Contato</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 google-highlight-section" id="google-ambassador">
+    <div class="container">
+      <div class="glass-card p-5 rounded-4 position-relative overflow-hidden">
+        <div class="google-colors-top"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h2 class="fw-bold mb-3"><span class="text-google-blue">G</span><span class="text-google-red">o</span><span class="text-google-yellow">o</span><span class="text-google-blue">g</span><span class="text-google-green">l</span><span class="text-google-red">e</span> Student Ambassador 🚀</h2>
+            <p class="lead text-muted mb-4">Fui escolhido como Estudante Embaixador do Google no Brasil. Uma imersão prática focada em liderança digital, desenvolvimento técnico e ecossistema Google Workspace e IA (Gemini).</p>
+            <p class="mb-4">"O que mais me anima é a força da comunidade. Construindo uma rede baseada em respeito, inclusão e muita mão na massa. Quero trazer os bastidores, testes reais com IA e dicas de produtividade!"</p>
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="btn btn-dark px-4 py-2 rounded-pill"><i class="fab fa-linkedin me-2"></i>Acompanhe a jornada</a>
+          </div>
+          <div class="col-lg-5 mt-4 mt-lg-0 text-center">
+            <img src="Google-Perfil.jpeg" alt="Google Estudante Embaixador" class="img-fluid rounded-4 shadow-lg floating-anim" style="max-height: 400px; border: 3px solid #ea4335;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="projetos">
+    <div class="container text-center">
+      <h2 class="section-title">Projetos</h2>
+      <div class="glass-card p-5 mt-4 mx-auto shadow-sm" style="max-width: 600px; border-radius: 1rem;">
+        <i class="fab fa-github fa-4x mb-4 text-primary"></i>
+        <h3 class="h4 mb-3 fw-bold">Meu Portfólio no GitHub</h3>
+        <p class="text-muted mb-4">Todos os meus projetos, códigos e experimentos estão centralizados no meu repositório. Acesse para ver como resolvo problemas complexos com dados, engenharia e análises de BI.</p>
+        <a href="https://github.com/matheuscampos-it" target="_blank" class="btn btn-primary px-4 py-2 animated-btn glass-btn rounded-pill">
+          <i class="fab fa-github me-2"></i>Acessar Repositório
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <section class="py-5 bg-white" id="conteudos">
+  <div class="container">
+    <h2 class="section-title">Meus Conteúdos</h2>
+    
+    <div class="row mb-5">
+      <div class="col-12 text-center mb-4">
+        <p class="lead">Compartilho experiências, devlogs e bate-papos sobre tecnologia e análise de dados através das minhas redes sociais.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <div class="content-icon bg-primary text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <h4 class="ms-3 mb-0">LinkedIn</h4>
+          </div>
+          
+          <p>Gosto de traduzir dados em histórias. Aqui compartilho aprendizados, ferramentas e projetos que me ajudam (e podem te ajudar também!) a entender o mundo com mais clareza.</p>
+          
+          <div class="text-center mt-4 mb-4">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/recent-activity/shares/" target="_blank" class="linkedin-profile-link">
+              <div class="social-preview-container">
+                <img src="https://i.imgur.com/UWyDaKW.png" alt="Perfil LinkedIn" class="linkedin-preview-image img-fluid rounded shadow-sm" style="width: 100%; height: 280px; object-fit: cover;">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <i class="fab fa-linkedin fa-3x mb-3"></i>
+                    <p>Ver publicações no LinkedIn</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="btn btn-outline-primary">
+              <i class="fab fa-linkedin me-2"></i>Seguir no LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <div class="content-icon bg-danger text-white">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <h4 class="ms-3 mb-0">YouTube</h4>
+          </div>
+          
+          <p>Compartilho o que aprendo sobre dados, programação e tecnologia com vídeos diretos, simples e feitos por quem também está em constante evolução.</p>
+          
+         <div class="text-center mt-4 mb-4">
+            <a href="https://www.youtube.com/@horian-dados/videos" target="_blank" class="youtube-channel-link"> <div class="social-preview-container">
+                <img src="https://i.imgur.com/uP90kWv.png" alt="Canal YouTube" class="youtube-preview-image img-fluid rounded shadow-sm" style="width: 100%; height: 280px; object-fit: cover;">
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <i class="fab fa-youtube fa-3x mb-3 text-danger"></i>
+                    <p>Assistir vídeos no YouTube</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="mt-4 text-center">
+            <a href="https://www.youtube.com/@horian-dados" target="_blank" class="btn btn-outline-danger"> <i class="fab fa-youtube me-2"></i>Inscrever-se no Canal
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="py-5 bg-white" id="formacao">
+    <div class="container">
+      <h2 class="section-title">Formação Acadêmica</h2>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="education-timeline">
+            <div class="education-item">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="text-primary mb-0">Pós-Graduação em Governança de TI</h5>
+                  <span class="badge bg-light text-dark">2024 - 2025</span>
+                </div>
+                <h6 class="text-muted">Universidade Cruzeiro do Sul</h6>
+                <p>Especialização com foco em gestão estratégica de TI, governança corporativa e alinhamento entre tecnologia e negócios. Desenvolvimento de competências em frameworks como ITIL, COBIT e gestão de riscos em tecnologia.</p>
+              </div>
+            </div>
+            
+            <div class="education-item">
+              <div class="education-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="education-content">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="text-primary mb-0">Bacharelado em Sistemas de Informação</h5>
+                  <span class="badge bg-light text-dark">2017 - 2023</span>
+                </div>
+                <h6 class="text-muted">Universidade Federal de Itajubá (UNIFEI)</h6>
+                <p>Formação completa em Sistemas de Informação com foco em desenvolvimento de software, análise de dados e gestão de projetos de tecnologia. Participação em projetos acadêmicos e atividades extracurriculares relacionadas à tecnologia da informação.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="py-5 position-relative" id="experiencias">
+    <div class="glass-bg-blur variant-2"></div>
+    <div class="container position-relative z-index-1">
+      <h2 class="section-title gradient-text">Trajetória Profissional</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="experience-timeline">
+            
+            <div class="experience-item glass-card p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="text-primary fw-bold mb-0">Analista de Dados <span class="badge bg-primary ms-2 rounded-pill">inowatt</span></h5>
+                <span class="badge glass-pill text-dark">Nov 2025 - Presente</span>
+              </div>
+              <p class="mb-3 text-muted">Construção e manutenção da infraestrutura de dados da holding Inowatt (setor de energia).</p>
+              <ul class="text-muted small">
+                <li><strong>Engenharia de Dados (ETL/ELT):</strong> Planejamento e execução de pipelines de dados de diversas fontes via SQL.</li>
+                <li><strong>Modelagem & Governança:</strong> Manutenção e aplicação de boas práticas em bases de dados.</li>
+                <li><strong>BI:</strong> Suporte analítico traduzindo dados em insights via Power BI e Notion.</li>
+                <li><strong>Monitoramento:</strong> Acompanhamento proativo de fluxos operacionais e microserviços.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item glass-card p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="text-primary fw-bold mb-0">Analista de Dados <span class="badge bg-secondary ms-2 rounded-pill">Data Mundo</span></h5>
+                <span class="badge glass-pill text-dark">Jul 2025 - Out 2025</span>
+              </div>
+              <ul class="text-muted small mt-2">
+                <li>Atuação com a área de negócios para requisitos analíticos e metodologias ágeis (Scrum).</li>
+                <li>Processos ETL (Pentaho, SSIS, SQL) e integração de múltiplas fontes.</li>
+                <li>Desenvolvimento de dashboards interativos (Power BI, Tableau, Data Studio).</li>
+                <li>Criação de indicadores (KPIs/OKRs) e aplicação de boas práticas LGPD.</li>
+              </ul>
+            </div>
+            
+            <div class="experience-item glass-card p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="text-primary fw-bold mb-0">Analista de TI <span class="badge bg-secondary ms-2 rounded-pill">Cabelauto</span></h5>
+                <span class="badge glass-pill text-dark">Abr 2025 - Out 2025</span>
+              </div>
+              <p class="text-muted small mt-2">Suporte técnico corporativo, manutenção de redes, implantação de rotinas de backup, auditoria de dados e desenvolvimento de relatórios técnicos/dashboards gerenciais.</p>
+            </div>
+            
+            <div class="experience-item glass-card p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="text-primary fw-bold mb-0">Desenvolvedor Front-end <span class="badge bg-secondary ms-2 rounded-pill">NeST Digital</span></h5>
+                <span class="badge glass-pill text-dark">Jan 2022 - Mai 2023</span>
+              </div>
+              <p class="text-muted small mt-2">Interfaces modernas, responsivas e focadas em UX/UI utilizando HTML, CSS, JavaScript e ecossistema WordPress (WooCommerce).</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="habilidades">
+    <div class="container">
+      <h2 class="section-title gradient-text">Stack & Habilidades</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="glass-card p-4 h-100">
+            <h3 class="h5 mb-4 fw-bold"><i class="fas fa-database text-primary me-2"></i>Engenharia & Análise de Dados</h3>
+            
+            <div class="mb-4">
+              <h6 class="fw-bold text-muted mb-2">Ferramentas de BI</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary px-3 py-2">Power BI</span>
+                <span class="badge bg-info text-dark px-3 py-2">Tableau</span>
+                <span class="badge bg-warning text-dark px-3 py-2">Looker Studio</span>
+                <span class="badge bg-light text-dark border px-3 py-2">Notion</span>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <h6 class="fw-bold text-muted mb-2">Banco & Engenharia</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-dark px-3 py-2">SQL Avançado</span>
+                <span class="badge bg-secondary px-3 py-2">PostgreSQL</span>
+                <span class="badge bg-success px-3 py-2">ETL/ELT (Pentaho, SSIS)</span>
+                <span class="badge bg-danger px-3 py-2">Modelagem</span>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <h6 class="fw-bold text-muted mb-2">Arquitetura</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary px-3 py-2">Governança de Dados</span>
+                <span class="badge bg-dark px-3 py-2">Versionamento</span>
+                <span class="badge bg-secondary px-3 py-2">Microserviços</span>
+              </div>
+            </div>
+            
+            <div class="mb-0">
+              <h6 class="fw-bold text-muted mb-2">Processos & Governança</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-success px-3 py-2">LGPD</span>
+                <span class="badge bg-info text-dark px-3 py-2">Scrum</span>
+                <span class="badge bg-warning text-dark px-3 py-2">Kanban</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="glass-card p-4 mb-4">
+            <h3 class="h5 mb-4 fw-bold"><i class="fas fa-brain text-primary me-2"></i>Soft Skills & Business</h3>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
+                  <i class="fas fa-users-cog skill-icon mb-2"></i>
+                  <span class="fw-semibold small">Governança de TI</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
+                  <i class="fas fa-project-diagram skill-icon mb-2"></i>
+                  <span class="fw-semibold small">Metodologias Ágeis</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
+                  <i class="fas fa-chart-line skill-icon mb-2"></i>
+                  <span class="fw-semibold small">Indicadores (KPIs/OKRs)</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
+                  <i class="fas fa-bullhorn skill-icon mb-2"></i>
+                  <span class="fw-semibold small">Liderança Digital</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-4 position-relative overflow-hidden border border-primary">
+            <div class="position-absolute top-0 end-0 p-3 opacity-25">
+              <i class="fas fa-robot fa-4x text-primary"></i>
+            </div>
+            <h3 class="h5 mb-3 fw-bold text-primary position-relative z-1"><i class="fas fa-magic me-2"></i>Inteligência Artificial Aplicada</h3>
+            <p class="text-muted small mb-3 position-relative z-1">Uso avançado de IAs para aumento de produtividade, estruturação complexa de dados e automação de fluxos.</p>
+            <div class="d-flex flex-wrap gap-2 position-relative z-1">
+              <span class="badge bg-dark px-3 py-2"><i class="fas fa-bolt text-warning me-1"></i> Claude (Skills & Memories)</span>
+              <span class="badge bg-dark px-3 py-2"><i class="fas fa-sparkles text-primary me-1"></i> Google Gemini</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="contato">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-white p-4 rounded shadow-sm">
+            <form id="contactForm" method="post" action="https://formsubmit.co/campos98matheus@gmail.com">
+              <input type="hidden" name="_next" value="https://matheuscampos-it.github.io/matheuscampos/">
+              <input type="hidden" name="_subject" value="Novo contato do seu portfólio">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei o mais breve possível.">
+              <input type="hidden" name="_template" value="table">
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="subject" class="form-label">Assunto</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="message" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary px-4 py-2 animated-btn">Enviar Mensagem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h4 class="h5 mb-3">Sobre Mim</h4>
+          <p>Profissional de Tecnologia da Informação com formação em Sistemas de Informação e pós-graduação em Governança de TI. Atua com foco em Análise de Dados, unindo conhecimentos em Python, SQL, Power BI e Excel para transformar dados em insights estratégicos. Possui projetos autorais voltados a esportes e games, além de criar conteúdos educativos sobre dados com uma abordagem criativa e visual. Busca oportunidades que unam tecnologia, análise e comunicação clara de resultados.</p>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h4 class="h5 mb-3">Links Rápidos</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#sobre" class="text-decoration-none text-light">Sobre</a></li>
+            <li class="mb-2"><a href="#projetos" class="text-decoration-none text-light">Projetos</a></li>
+            <li class="mb-2"><a href="#conteudos" class="text-decoration-none text-light">Conteúdos</a></li>
+            <li class="mb-2"><a href="#experiencias" class="text-decoration-none text-light">Experiências</a></li>
+            <li class="mb-2"><a href="#habilidades" class="text-decoration-none text-light">Habilidades</a></li>
+            <li><a href="#contato" class="text-decoration-none text-light">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h5 mb-3">Redes Sociais</h4>
+          <div class="d-flex">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/matheuscampos-it" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+      </div>
+      <hr class="my-4 bg-light opacity-25">
+      <div class="text-center">
+        <p class="mb-0">© 2025 Matheus Campos Sousa. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="scroll-up"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+      });
+    });
+    
+    // Show/hide scroll to top button
+    const scrollUp = document.querySelector('.scroll-up');
+    if (scrollUp) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollUp.classList.add('visible');
+            } else {
+                scrollUp.classList.remove('visible');
+            }
+        });
+    }
+  });
+
+  // Código para o carrossel de projetos
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectSlider = document.getElementById('projectsSlider');
+    const prevProject = document.getElementById('prevProject');
+    const nextProject = document.getElementById('nextProject');
+    
+    if (!projectSlider || !prevProject || !nextProject) return; // Abort if elements are not found
+
+    const projectItems = projectSlider.querySelectorAll('.project-item');
+    if (projectItems.length === 0) return; // Abort if no project items
+
+    let currentIndex = 0;
+    let projectsShown = 3;
+    const totalProjects = projectItems.length;
+    
+    function updateProjectsShown() {
+      if (window.innerWidth < 768) {
+        projectsShown = 1;
+      } else if (window.innerWidth < 992) {
+        projectsShown = 2;
+      } else {
+        projectsShown = 3;
+      }
+      
+      if (currentIndex > totalProjects - projectsShown) {
+        currentIndex = totalProjects - projectsShown;
+        if (currentIndex < 0) currentIndex = 0;
+      }
+       // Hide/show navigation buttons based on total projects and shown projects
+        if (totalProjects <= projectsShown) {
+            prevProject.style.display = 'none';
+            nextProject.style.display = 'none';
+        } else {
+            prevProject.style.display = 'flex';
+            nextProject.style.display = 'flex';
+        }
+      updateCarouselVisuals();
+    }
+    
+    function moveCarousel(direction) {
+      if (totalProjects <= projectsShown) return; // No need to move if all items are visible
+
+      if (direction === 'next') {
+        if (currentIndex < totalProjects - projectsShown) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; 
+        }
+      } else { // prev
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = totalProjects - projectsShown; 
+          if (currentIndex < 0) currentIndex = 0;
+        }
+      }
+      updateCarouselVisuals();
+    }
+    
+    function updateCarouselVisuals() {
+        if (projectItems.length === 0) return;
+        const itemWidthPercentage = 100 / projectsShown;
+        
+        projectItems.forEach(item => {
+            item.style.flex = `0 0 ${itemWidthPercentage}%`;
+            item.style.maxWidth = `${itemWidthPercentage}%`;
+        });
+
+        const offsetPercentage = -currentIndex * itemWidthPercentage;
+        projectSlider.style.transform = `translateX(${offsetPercentage}%)`;
+    }
+    
+    prevProject.addEventListener('click', () => moveCarousel('prev'));
+    nextProject.addEventListener('click', () => moveCarousel('next'));
+    
+    window.addEventListener('resize', () => {
+      updateProjectsShown();
+    });
+    
+    updateProjectsShown(); // Initial call
+  });
+
+  // Script para verificar e corrigir problemas com imagens
+  document.addEventListener('DOMContentLoaded', function() {
+    const profilePic = document.querySelector('.profile-pic img');
+    if (profilePic) {
+      profilePic.onerror = function() {
+        console.log('Erro ao carregar imagem de perfil, tentando fallback.');
+        this.onerror = null; 
+        this.src = 'https://i.imgur.com/heJxybF.png'; 
+        
+        this.onerror = function() { // If fallback also fails
+          console.log('Fallback da imagem de perfil falhou. Mostrando iniciais.');
+          this.style.display = 'none';
+          const parentDiv = this.parentElement;
+          parentDiv.style.display = 'flex';
+          parentDiv.style.alignItems = 'center';
+          parentDiv.style.justifyContent = 'center';
+          parentDiv.innerHTML = 'MC'; 
+        };
+      };
+    }
+    
+    const socialImages = document.querySelectorAll('.linkedin-preview-image, .youtube-preview-image');
+    socialImages.forEach(img => {
+      img.onerror = function() {
+        console.log('Erro ao carregar imagem social:', this.src);
+        const originalSrc = this.src; // Keep original src for potential retry
+        this.onerror = null;
+        
+        let fallbackSrc = '';
+        if (this.classList.contains('linkedin-preview-image')) {
+          fallbackSrc = 'https://i.imgur.com/UWyDaKW.png';
+        } else if (this.classList.contains('youtube-preview-image')) {
+          fallbackSrc = 'https://i.imgur.com/uP90kWv.png';
+        }
+
+        if (fallbackSrc && this.src !== fallbackSrc) { // Avoid infinite loop if fallback is the same
+            this.src = fallbackSrc;
+        }
+        
+        this.onerror = function() { // If direct fallback also fails
+          console.log('Fallback da imagem social falhou. Mostrando placeholder colorido.');
+          const placeholder = document.createElement('div');
+          placeholder.style.width = '100%';
+          placeholder.style.height = this.style.height || '280px'; // Use existing height or default
+          placeholder.style.display = 'flex';
+          placeholder.style.alignItems = 'center';
+          placeholder.style.justifyContent = 'center';
+          placeholder.style.color = 'white';
+          placeholder.style.fontSize = '1.5rem';
+          placeholder.style.borderRadius = 'inherit'; // Inherit border-radius from parent container
+          
+          if (this.classList.contains('linkedin-preview-image')) {
+            placeholder.style.backgroundColor = '#0077B5'; // LinkedIn blue
+            placeholder.innerHTML = '<i class="fab fa-linkedin fa-3x"></i>';
+          } else {
+            placeholder.style.backgroundColor = '#FF0000'; // YouTube red
+            placeholder.innerHTML = '<i class="fab fa-youtube fa-3x"></i>';
+          }
+          
+          if(this.parentElement) {
+            this.parentElement.replaceChild(placeholder, this);
+          }
+        };
+      };
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectsData = {
+      'mathecasLab': {
+        title: 'Mathecas.Lab',
+        description: `
+          <p>Mathecas.Lab is my personal space for experimentation and developing creative ideas in the world of technology. Here, I explore new tools, build prototypes, and bring various projects to life, from small utilities to more elaborate concepts. This lab is where ideas like "The Cosmic Sloth Oracle," "Accidental Melody Composer," and others might take shape!</p>
+          <div class="project-section mt-4">
+            <h5>Objective</h5>
+            <p>The main goal of Mathecas.Lab is to be a playground for continuous learning and practical application of technologies like React for the front-end and Node.js for the back-end, aligning with my development stack preferences. It's a space to test, fail, learn, and evolve.</p>
+          </div>
+          <div class="mt-4">
+            <h5>Commonly Used Technologies</h5>
+            <ul>
+              <li><strong>Front-end:</strong> React, JavaScript (ES6+), HTML5, CSS3</li>
+              <li><strong>Back-end:</strong> Node.js, Express.js</li>
+              <li><strong>Other Tools:</strong> Git</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Mathecas.Lab+Main+View',
+          'https://via.placeholder.com/800x450/C8A85B/000000?text=Lab+Experiment+Alpha',
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Concept+Development'
+        ],
+        demoLink: '#', // Atualize este link
+        githubLink: '#' // Atualize este link
+      },
+      'projeto1': {
+        title: 'O Que Jogar Hoje?',
+        description: `
+          <p>Um sistema de recomendação de jogos inteligente que ajuda usuários a descobrirem novos títulos com base em seus gostos, tempo disponível e plataformas que possuem.</p>
+          <div class="project-section mt-4">
+            <h5>Problema</h5>
+            <p>Com milhares de jogos lançados todos os anos, muitos gamers enfrentam o "paradoxo da escolha" - ter tantas opções que acaba sendo difícil decidir o que jogar. Além disso, muitos não têm tempo para pesquisar e comparar jogos que realmente se encaixem nas suas preferências.</p>
+          </div>
+          <div class="project-section mt-4">
+            <h5>Solução</h5>
+            <p>Criei um sistema que combina:</p>
+            <ul>
+              <li>Extração e processamento de dados da RAWG API (uma das maiores bases de dados de jogos)</li>
+              <li>Algoritmos de filtragem baseados em gênero, duração média, avaliações e plataformas</li>
+              <li>Interface visual intuitiva com Power BI para exploração e descoberta de jogos</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h5>Tecnologias Utilizadas</h5>
+            <ul>
+              <li><strong>Python:</strong> Pandas para manipulação de dados, Requests para chamadas à API</li>
+              <li><strong>Power BI:</strong> Para a criação do dashboard interativo e visualizações</li>
+              <li><strong>API:</strong> Integração com a RAWG Game Database API</li>
+              <li><strong>Git/GitHub:</strong> Controle de versão e hospedagem do código</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'images/projeto/ChatGPT Image 6 de mai. de 2025, 19_24_06.png', // Manter imagem existente
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=O+Que+Jogar+Hoje+Interface',
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Detalhe+do+Dashboard'
+        ],
+        demoLink: '#',
+        githubLink: 'https://github.com/matheuscampos-it/OQueJogarHoje'
+      },
+      'projeto2': {
+        title: 'Dashboard de Vendas',
+        description: `
+          <p>Um dashboard corporativo completo para análise de vendas, com métricas chave de performance e visualizações interativas para tomada de decisão baseada em dados.</p>
+          <div class="project-section mt-4">
+            <h5>Problema</h5>
+            <p>Uma empresa de varejo estava com dificuldades para acompanhar o desempenho de vendas de forma consolidada, já que os dados estavam distribuídos em diferentes sistemas e planilhas. Isso resultava em atrasos na tomada de decisão e falta de visibilidade sobre tendências importantes.</p>
+          </div>
+          <div class="project-section mt-4">
+            <h5>Solução</h5>
+            <p>Desenvolvi um dashboard em Power BI que:</p>
+            <ul>
+              <li>Integra dados de múltiplas fontes (ERP, CRM, planilhas)</li>
+              <li>Apresenta KPIs essenciais (faturamento, margem, ticket médio)</li>
+              <li>Permite análises por produto, região, vendedor e período</li>
+              <li>Identifica padrões sazonais e oportunidades de crescimento</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h5>Tecnologias Utilizadas</h5>
+            <ul>
+              <li><strong>Power BI:</strong> Desenvolvimento do dashboard e visualizações</li>
+              <li><strong>DAX:</strong> Criação de métricas calculadas avançadas</li>
+              <li><strong>SQL:</strong> Consultas para extração de dados do banco relacional</li>
+              <li><strong>Power Query:</strong> ETL e modelagem de dados</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Sales+Dashboard+Overview',
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Sales+KPIs',
+          'https://via.placeholder.com/800x450/C8A85B/000000?text=Regional+Sales+Analysis'
+        ],
+        demoLink: '#',
+        githubLink: '#'
+      },
+      'projeto3': {
+        title: 'Sistema de Gestão',
+        description: `
+          <p>Um sistema web completo para gestão de estoque, clientes e fornecedores, com controle de acesso por níveis de usuário e relatórios automatizados.</p>
+          <div class="project-section mt-4">
+            <h5>Problema</h5>
+            <p>Uma empresa de médio porte estava gerenciando seus processos através de planilhas e anotações manuais, causando erros, inconsistências e dificuldade no acompanhamento do fluxo operacional.</p>
+          </div>
+          <div class="project-section mt-4">
+            <h5>Solução</h5>
+            <p>Desenvolvi um sistema web completo que:</p>
+            <ul>
+              <li>Centraliza o cadastro e gestão de produtos, clientes e fornecedores</li>
+              <li>Automatiza o controle de estoque com alertas de reposição</li>
+              <li>Gerencia pedidos e acompanha status de entrega</li>
+              <li>Gera relatórios personalizados para tomada de decisão</li>
+              <li>Controla acessos por níveis de permissão de usuários</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h5>Tecnologias Utilizadas</h5>
+            <ul>
+              <li><strong>Python:</strong> Linguagem base do projeto</li>
+              <li><strong>Django:</strong> Framework web para desenvolvimento</li>
+              <li><strong>PostgreSQL:</strong> Banco de dados relacional</li>
+              <li><strong>HTML/CSS/JavaScript:</strong> Frontend e interatividade</li>
+              <li><strong>Bootstrap:</strong> Framework CSS para interface responsiva</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Management+System+Login',
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Inventory+Module',
+          'https://via.placeholder.com/800x450/C8A85B/000000?text=Client+Dashboard'
+        ],
+        demoLink: '#',
+        githubLink: '#'
+      },
+      'projeto4': {
+        title: 'App de Finanças Pessoais',
+        description: `
+          <p>Aplicativo mobile para controle de finanças pessoais com categorização automática de gastos, estabelecimento de metas e análises visuais do comportamento financeiro.</p>
+          <div class="project-section mt-4">
+            <h5>Problema</h5>
+            <p>Muitas pessoas têm dificuldade em manter um controle efetivo de suas finanças, sem uma visão clara de para onde o dinheiro está indo e sem ferramentas práticas para criar e manter um orçamento.</p>
+          </div>
+          <div class="project-section mt-4">
+            <h5>Solução</h5>
+            <p>Desenvolvi um aplicativo mobile que:</p>
+            <ul>
+              <li>Permite registro rápido de receitas e despesas</li>
+              <li>Categoriza automaticamente transações com machine learning</li>
+              <li>Cria orçamentos e acompanha o progresso em tempo real</li>
+              <li>Gera relatórios e gráficos para visualização de padrões de gastos</li>
+              <li>Envia alertas e sugestões para melhorar a saúde financeira</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h5>Tecnologias Utilizadas</h5>
+            <ul>
+              <li><strong>React Native:</strong> Framework para desenvolvimento mobile</li>
+              <li><strong>Firebase:</strong> Autenticação, banco de dados e análises</li>
+              <li><strong>TensorFlow Lite:</strong> Machine learning para categorização</li>
+              <li><strong>Chart.js:</strong> Visualização de dados e gráficos</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Finance+App+Home',
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Expense+Tracking',
+          'https://via.placeholder.com/800x450/C8A85B/000000?text=Budget+Goals'
+        ],
+        demoLink: '#',
+        githubLink: '#'
+      },
+      'projeto5': {
+        title: 'Web Scraper para E-commerce',
+        description: `
+          <p>Ferramenta automatizada para coleta e análise de dados de preços e produtos em sites de e-commerce, com alertas de ofertas personalizados.</p>
+          <div class="project-section mt-4">
+            <h5>Problema</h5>
+            <p>Consumidores frequentemente perdem promoções e descontos em produtos que desejam comprar por não terem tempo de verificar constantemente os preços em diferentes lojas online.</p>
+          </div>
+          <div class="project-section mt-4">
+            <h5>Solução</h5>
+            <p>Desenvolvi um sistema de web scraping que:</p>
+            <ul>
+              <li>Monitora preços de produtos em múltiplos e-commerces</li>
+              <li>Armazena histórico de preços para análise de tendências</li>
+              <li>Envia alertas por email quando o preço atinge um valor desejado</li>
+              <li>Gera relatórios comparativos entre lojas diferentes</li>
+              <li>Identifica padrões de descontos para prever melhores momentos de compra</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <h5>Tecnologias Utilizadas</h5>
+            <ul>
+              <li><strong>Python:</strong> Linguagem principal do projeto</li>
+              <li><strong>Beautiful Soup/Selenium:</strong> Ferramentas de web scraping</li>
+              <li><strong>Pandas:</strong> Análise e manipulação de dados</li>
+              <li><strong>SQLite:</strong> Armazenamento do histórico de preços</li>
+              <li><strong>Matplotlib/Seaborn:</strong> Visualização de dados e gráficos</li>
+            </ul>
+          </div>
+        `,
+        images: [
+          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=E-commerce+Scraper+UI',
+          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Price+Tracking+Chart',
+          'https://via.placeholder.com/800x450/C8A85B/000000?text=Alert+Configuration'
+        ],
+        demoLink: '#',
+        githubLink: '#'
+      }
+    };
+
+    document.querySelectorAll('.view-project').forEach(button => {
+      button.addEventListener('click', function() {
+        const projectId = this.getAttribute('data-project-id');
+        const projectData = projectsData[projectId];
+        
+        if (projectData) {
+          document.getElementById('projectModalLabel').textContent = projectData.title;
+          
+          let imagesHtml = `
+            <div id="projectDetailCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                ${projectData.images.map((img, i) => 
+                  `<button type="button" data-bs-target="#projectDetailCarousel" data-bs-slide-to="${i}" ${i === 0 ? 'class="active"' : ''} aria-current="${i === 0 ? 'true' : 'false'}" aria-label="Slide ${i+1}"></button>`
+                ).join('')}
+              </div>
+              <div class="carousel-inner rounded">
+                ${projectData.images.map((img, i) => 
+                  `<div class="carousel-item ${i === 0 ? 'active' : ''}">
+                    <img src="${img}" class="d-block w-100" alt="Image for ${projectData.title} ${i+1}">
+                  </div>`
+                ).join('')}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#projectDetailCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#projectDetailCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          `;
+          
+          const modalContent = `
+            ${imagesHtml}
+            <div class="project-details">
+              ${projectData.description}
+            </div>
+          `;
+          
+          document.getElementById('projectModalBody').innerHTML = modalContent;
+          
+          const demoBtn = document.getElementById('projectLiveDemo');
+          const githubBtn = document.getElementById('projectGithub');
+          
+          demoBtn.href = projectData.demoLink;
+          githubBtn.href = projectData.githubLink;
+          
+          demoBtn.style.display = (!projectData.demoLink || projectData.demoLink === '#') ? 'none' : 'inline-block';
+          githubBtn.style.display = (!projectData.githubLink || projectData.githubLink === '#') ? 'none' : 'inline-block';
+        }
+      });
+    });
+  });
+
+  // Theme Toggle Script (Corrected)
+  document.querySelectorAll('.theme-toggle-btn').forEach(button => {
+      button.addEventListener('click', function () {
+          document.body.classList.toggle('dark-mode');
+          
+          const isDarkMode = document.body.classList.contains('dark-mode');
+          
+          // Toggle icons on all theme toggle buttons
+          document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
+              const icon = btn.querySelector('i');
+              if (icon) {
+                  if (isDarkMode) {
+                      icon.classList.remove('fa-moon');
+                      icon.classList.add('fa-sun');
+                  } else {
+                      icon.classList.remove('fa-sun');
+                      icon.classList.add('fa-moon');
+                  }
+              }
+          });
+      });
+  });
+  </script>
+</body>
+</html>

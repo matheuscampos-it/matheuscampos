@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="lightShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1A73E8" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Main Rounded Container -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#brandGrad)" filter="url(#lightShadow)"/>
+  <rect x="48" y="48" width="416" height="416" rx="96" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="8"/>
+  
+  <!-- Stylized M & C Path -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- M Letter -->
+    <path d="M 128 352 L 128 176 L 216 280 L 304 176 L 304 352" />
+    <!-- C Arc -->
+    <path d="M 384 216 C 360 176 304 168 280 200 C 256 232 256 280 280 312 C 304 344 360 336 384 296" stroke-width="32"/>
+  </g>
+  
+  <!-- Node Dots -->
+  <circle cx="128" cy="176" r="18" fill="#FFFFFF"/>
+  <circle cx="216" cy="280" r="16" fill="#F59E0B"/>
+  <circle cx="304" cy="176" r="18" fill="#FFFFFF"/>
+  <circle cx="384" cy="216" r="16" fill="#60A5FA"/>
+  <circle cx="384" cy="296" r="16" fill="#A78BFA"/>
+</svg>

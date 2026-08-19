@@ -1,249 +1,706 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <head>
+<html lang="pt-br">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Campos - Engenheiro de Dados & Embaixador Google</title>
+  <title>Matheus Campos - Analista & Engenheiro de Dados | Governança de TI</title>
+  <meta name="description" content="Portfólio profissional de Matheus Campos: Analista e Engenheiro de Dados com pós-graduação em Governança de TI. Especialista em SQL, Python, Power BI, AWS, Docker, APIs REST e Inteligência Artificial. Estudante Embaixador do Google no Brasil.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-apple.png">
 </head>
 <body class="bg-light text-dark" id="top">
+  <!-- Header / Navigation -->
   <header class="bg-white shadow-sm py-3 sticky-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <a href="#" class="text-decoration-none">
-          <h3 class="m-0 text-primary fw-bold">Matheus Campos</h3>
+        <a href="#top" class="text-decoration-none d-flex align-items-center gap-2">
+          <img src="Logo-Matheus-square.png" alt="Matheus Campos Logo" width="38" height="38" class="rounded-3 shadow-sm" style="object-fit: cover;">
+          <span class="h4 m-0 text-primary fw-bold">Matheus Campos</span>
         </a>
-        <nav class="d-none d-md-flex nav-menu text-uppercase fw-bold">
+        <nav class="d-none d-lg-flex nav-menu text-uppercase fw-bold">
           <a href="#sobre" class="nav-item text-decoration-none text-dark">Sobre</a>
+          <a href="#cases" class="nav-item text-decoration-none text-dark">Cases</a>
+          <a href="#experiencias" class="nav-item text-decoration-none text-dark">Trajetória</a>
+          <a href="#habilidades" class="nav-item text-decoration-none text-dark">Habilidades</a>
+          <a href="#formacao" class="nav-item text-decoration-none text-dark">Formação</a>
           <a href="#projetos" class="nav-item text-decoration-none text-dark">Projetos</a>
           <a href="#conteudos" class="nav-item text-decoration-none text-dark">Conteúdos</a>
-          <a href="#formacao" class="nav-item text-decoration-none text-dark">Formação</a>
-          <a href="#experiencias" class="nav-item text-decoration-none text-dark">Experiências</a>
-          <a href="#habilidades" class="nav-item text-decoration-none text-dark">Habilidades</a>
           <a href="#contato" class="nav-item text-decoration-none text-dark">Contato</a>
         </nav>
-        <button class="btn btn-outline-secondary ms-3 theme-toggle-btn">
-          <i class="fas fa-moon"></i>
-        </button>
-        <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-          <i class="fas fa-bars"></i>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-outline-secondary theme-toggle-btn rounded-circle" style="width: 38px; height: 38px; padding: 0;" aria-label="Alternar Tema">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Abrir Menu">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
+  <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end" id="mobileMenu">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title text-primary">Menu</h5>
+      <h5 class="offcanvas-title text-primary fw-bold">Menu</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
-      <nav class="d-flex flex-column align-items-start">
-         <button class="btn btn-outline-secondary mb-3 theme-toggle-btn">
-            <i class="fas fa-moon"></i> <span class="ms-2">Toggle Theme</span>
-        </button>
-        <a href="#sobre" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Sobre</a>
-        <a href="#projetos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Projetos</a>
-        <a href="#conteudos" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Conteúdos</a>
-        <a href="#formacao" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Formação</a>
-        <a href="#experiencias" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Experiências</a>
-        <a href="#habilidades" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Habilidades</a>
-        <a href="#contato" class="nav-item text-decoration-none text-dark py-2" data-bs-dismiss="offcanvas">Contato</a>
+      <nav class="d-flex flex-column align-items-start gap-2">
+        <a href="#sobre" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Sobre</a>
+        <a href="#cases" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Cases</a>
+        <a href="#experiencias" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Trajetória</a>
+        <a href="#habilidades" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Habilidades</a>
+        <a href="#formacao" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Formação</a>
+        <a href="#projetos" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Projetos</a>
+        <a href="#conteudos" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Conteúdos</a>
+        <a href="#contato" class="nav-item text-decoration-none text-dark w-100 py-2" data-bs-dismiss="offcanvas">Contato</a>
       </nav>
     </div>
   </div>
 
+  <!-- Hero Section ("Sobre") -->
   <section class="py-5 hero-section position-relative" id="sobre">
     <div class="glass-bg-blur"></div>
     <div class="container position-relative z-index-1">
       <div class="row align-items-center">
-        <div class="col-md-5 text-center mb-4 mb-md-0">
-          <div class="profile-pic mx-auto glass-border floating-anim">
-            <img src="https://i.imgur.com/heJxybF.png" alt="Matheus Campos" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="profile-pic mx-auto glass-border floating-anim shadow-lg">
+            <img src="Foto-Hero.jpeg" alt="Matheus Campos" onerror="this.onerror=null; this.src='Google-Perfil.jpeg';">
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-lg-8">
           <div class="badge-google-ambassador mb-3 floating-anim-delayed">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G" class="google-g-icon">
-            <span>Estudante Embaixador do Google</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" class="me-1"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            <span>Estudante Embaixador do Google no Brasil</span>
           </div>
-          <h1 class="display-4 fw-bold gradient-text mb-3">Matheus Campos</h1>
-          <h2 class="h4 text-muted mb-4">Engenheiro de Dados | Analista de Dados</h2>
-          <p class="lead mb-4">
-            Transformo dados brutos em ativos de valor e soluções escaláveis. Com sólida base em <strong>Engenharia de Dados (ETL/ELT)</strong>, <strong>Power BI</strong>, <strong>SQL</strong>, <strong>Python</strong> e Governança de TI. Possuo vivência prática na arquitetura de infraestrutura de dados, criação de KPIs e suporte estratégico à gestão corporativa. Além da construção de infraestruturas robustas, meu foco é traduzir dados complexos em histórias visuais (Storytelling) que impulsionam resultados estratégicos para o negócio. Além disso, tenho a honra de representar o ecossistema tecnológico como <strong class="text-google-blue">Estudante Embaixador do Google no Brasil</strong>, explorando inovações em IA (Gemini) e Workspace.
+          <h1 class="display-4 fw-bold gradient-text mb-2">Matheus Campos</h1>
+          <h2 class="h4 text-primary fw-semibold mb-3">Analista & Engenheiro de Dados | Governança de TI</h2>
+          
+          <p class="lead mb-4" style="font-size: 1.05rem; line-height: 1.6;">
+            Analista e Engenheiro de Dados com formação em <strong>Sistemas de Informação</strong> e pós-graduação em <strong>Governança de TI</strong>. Especialista na transformação de dados em ativos de valor, com forte atuação em infraestrutura (<strong>SQL, Python, Power BI, AWS, Docker</strong>), criação de pipelines resilientes e consumo de <strong>APIs REST</strong>. Possuo histórico comprovado na otimização de bancos de dados em produção e automação de relatórios orientados a I.A., unindo rigor técnico e visão analítica para impulsionar a tomada de decisão estratégica.
           </p>
+
           <div class="d-flex flex-wrap gap-2 mb-4">
             <div class="contact-info glass-pill">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Itajubá, MG - Brasil</span>
+            </div>
+            <div class="contact-info glass-pill">
               <i class="fas fa-envelope contact-icon"></i>
-              <span>campos98matheus@gmail.com</span>
+              <a href="mailto:campos98matheus@gmail.com" class="text-decoration-none text-reset">campos98matheus@gmail.com</a>
             </div>
             <div class="contact-info glass-pill">
               <i class="fas fa-phone contact-icon"></i>
-              <span>(35) 98422-8704</span>
+              <a href="tel:+5535984228704" class="text-decoration-none text-reset">+55 (35) 98422-8704</a>
             </div>
             <div class="contact-info glass-pill">
               <i class="fab fa-linkedin contact-icon"></i>
-              <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="text-decoration-none text-reset">/matheus-campos-it</a>
+              <a href="https://linkedin.com/in/matheus-campos-it" target="_blank" rel="noopener" class="text-decoration-none text-reset">in/matheus-campos-it</a>
+            </div>
+            <div class="contact-info glass-pill">
+              <i class="fab fa-github contact-icon"></i>
+              <a href="https://github.com/matheuscampos-it" target="_blank" rel="noopener" class="text-decoration-none text-reset">github.com/matheuscampos-it</a>
             </div>
           </div>
+
           <div class="d-flex gap-3 flex-wrap">
-            <a href="#experiencias" class="btn btn-primary px-4 py-2 animated-btn glass-btn">Ver Trajetória</a>
-            <a href="Curriculo_Matheus_Campos.pdf" target="_blank" class="btn btn-danger px-4 py-2 animated-btn glass-btn"><i class="fas fa-file-pdf me-2"></i>Baixar Currículo (PDF)</a>
-            <a href="#contato" class="btn btn-outline-primary px-4 py-2 glass-btn-outline">Contato</a>
+            <a href="#cases" class="btn btn-primary px-4 py-2 animated-btn glass-btn">
+              <i class="fas fa-briefcase me-2"></i>Cases Reais
+            </a>
+            <a href="Curriculo_Matheus_Campos.pdf" target="_blank" class="btn btn-danger px-4 py-2 animated-btn glass-btn">
+              <i class="fas fa-file-pdf me-2"></i>Baixar Currículo (PDF)
+            </a>
+            <a href="#experiencias" class="btn btn-outline-primary px-4 py-2 glass-btn-outline">
+              <i class="fas fa-user-tie me-2"></i>Ver Trajetória
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-5 google-highlight-section" id="google-ambassador">
+  <!-- Google Student Ambassador Highlight Section -->
+  <section class="py-4 google-highlight-section" id="google-ambassador">
     <div class="container">
-      <div class="glass-card p-5 rounded-4 position-relative overflow-hidden">
+      <div class="glass-card p-4 p-md-5 rounded-4 position-relative overflow-hidden shadow-sm">
         <div class="google-colors-top"></div>
         <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h2 class="fw-bold mb-3"><span class="text-google-blue">G</span><span class="text-google-red">o</span><span class="text-google-yellow">o</span><span class="text-google-blue">g</span><span class="text-google-green">l</span><span class="text-google-red">e</span> Student Ambassador 🚀</h2>
-            <p class="lead text-muted mb-4">Fui escolhido como Estudante Embaixador do Google no Brasil. Uma imersão prática focada em liderança digital, desenvolvimento técnico e ecossistema Google Workspace e IA (Gemini).</p>
-            <p class="mb-4">"O que mais me anima é a força da comunidade. Construindo uma rede baseada em respeito, inclusão e muita mão na massa. Quero trazer os bastidores, testes reais com IA e dicas de produtividade!"</p>
-            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="btn btn-dark px-4 py-2 rounded-pill"><i class="fab fa-linkedin me-2"></i>Acompanhe a jornada</a>
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge bg-primary text-white rounded-pill px-3 py-2">Reconhecimento Oficial</span>
+              <span class="badge bg-dark text-white rounded-pill px-3 py-2"><i class="fas fa-sparkles text-warning me-1"></i> Google Gemini & Workspace</span>
+            </div>
+            <h2 class="fw-bold mb-3 d-flex align-items-center gap-2 flex-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" class="me-1"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+              <span>Google Student Ambassador 🚀</span>
+            </h2>
+            <p class="lead text-muted mb-3">
+              Selecionado como Estudante Embaixador do Google no Brasil (Agosto - Dezembro de 2026). Imersão prática com foco em liderança digital, inovações com Inteligência Artificial (Gemini) e otimização de produtividade corporativa no ecossistema Google Workspace.
+            </p>
+            <p class="mb-4 text-secondary italic">
+              "Foco no fortalecimento da comunidade técnica através da troca de conhecimento prático, testes de IA gerativa e compartilhamento de devlogs de engenharia de dados."
+            </p>
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" rel="noopener" class="btn btn-dark px-4 py-2 rounded-pill">
+              <i class="fab fa-linkedin me-2"></i>Acompanhe minhas publicações no LinkedIn
+            </a>
           </div>
-          <div class="col-lg-5 mt-4 mt-lg-0 text-center">
-            <img src="Google-Perfil.jpeg" alt="Google Estudante Embaixador" class="img-fluid rounded-4 shadow-lg floating-anim" style="max-height: 400px; border: 3px solid #ea4335;">
+          <div class="col-lg-4 mt-4 mt-lg-0 text-center">
+            <img src="Google-Perfil.jpeg" alt="Google Student Ambassador - Matheus Campos" class="img-fluid rounded-4 shadow-lg border border-3 border-danger floating-anim" style="max-height: 280px; object-fit: cover;">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-5" id="projetos">
-    <div class="container text-center">
-      <h2 class="section-title">Projetos</h2>
-      <div class="glass-card p-5 mt-4 mx-auto shadow-sm" style="max-width: 600px; border-radius: 1rem;">
-        <i class="fab fa-github fa-4x mb-4 text-primary"></i>
-        <h3 class="h4 mb-3 fw-bold">Meu Portfólio no GitHub</h3>
-        <p class="text-muted mb-4">Todos os meus projetos, códigos e experimentos estão centralizados no meu repositório. Acesse para ver como resolvo problemas complexos com dados, engenharia e análises de BI.</p>
-        <a href="https://github.com/matheuscampos-it" target="_blank" class="btn btn-primary px-4 py-2 animated-btn glass-btn rounded-pill">
-          <i class="fab fa-github me-2"></i>Acessar Repositório
-        </a>
+  <!-- CASES REAIS -->
+  <section class="py-5 position-relative bg-light" id="cases">
+    <div class="glass-bg-blur variant-2"></div>
+    <div class="container position-relative z-index-1">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary px-3 py-2 rounded-pill text-uppercase">Atuação Técnica em Produção</span>
+        <h2 class="section-title gradient-text mt-2 mb-3">Cases Reais & Projetos Práticos</h2>
+        <p class="lead text-muted mx-auto" style="max-width: 750px;">
+          Projetos de engenharia de dados, BI, otimização de banco de dados, governança em nuvem e automações resilientes desenvolvidos e aplicados com foco em eficiência e escala.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Case 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-purple">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <span class="badge-case-tag tag-purple">Eng. Dados & IA</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Automação de Pipelines & Relatórios (IA)</h3>
+              <p class="text-muted small mb-0"><strong>Engenharia de Dados & Automação</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Substituição de processos manuais de aferição por pipelines em Python (Pandas) consumindo APIs REST multi-tenant e orquestração de Inteligência Artificial para geração automatizada de relatórios.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">Python / Pandas</span>
+                <span class="badge-tech">APIs REST</span>
+                <span class="badge-tech">LLM Agents</span>
+                <span class="badge-tech">openpyxl</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-chart-line text-success me-1"></i> <strong>Resultado:</strong> Escalou a capacidade de produção de <strong>12 para 133 relatórios/mês</strong> com consistência e idempotência.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: POWER BI & VISUALIZAÇÃO ANALÍTICA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-amber">
+                  <i class="fas fa-chart-pie text-amber"></i>
+                </div>
+                <span class="badge-case-tag tag-amber">BI & Analytics</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">BI & Visualização Analítica (Power BI)</h3>
+              <p class="text-muted small mb-0"><strong>Análise de Dados & BI</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Higienização, tratamento e normalização de fontes de dados heterogêneas para construção de dashboards estratégicos e relatórios interativos. Foco em visualização analítica clara, objetiva e orientada a métricas de decisão.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">Power BI</span>
+                <span class="badge-tech">Linguagem DAX</span>
+                <span class="badge-tech">Power Query / ETL</span>
+                <span class="badge-tech">Normalização Dados</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-chart-bar text-warning me-1"></i> <strong>Resultado:</strong> Transformação de dados brutos desestruturados em <strong>dashboards de alta clareza analítica e suporte à tomada de decisão</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-blue">
+                  <i class="fas fa-database"></i>
+                </div>
+                <span class="badge-case-tag tag-blue">SQL & Produção</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Otimização SQL & Performance de Banco</h3>
+              <p class="text-muted small mb-0"><strong>Otimização & Engenharia de Dados</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Troubleshooting de performance em banco de dados relacional de alto volume em ambiente de produção. Reescrita de consultas SQL complexas para eliminação de <i>full table scans</i>.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">MariaDB / PostgreSQL</span>
+                <span class="badge-tech">SQL Avançado</span>
+                <span class="badge-tech">Otimização Query</span>
+                <span class="badge-tech">Índices Clusterizados</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-bolt text-warning me-1"></i> <strong>Resultado:</strong> Redução dos tempos de resposta de <strong>timeout para milissegundos</strong> em consultas críticas.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-cyan">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <span class="badge-case-tag tag-cyan">AWS & Nuvem</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Governança de Infraestrutura Cloud (AWS)</h3>
+              <p class="text-muted small mb-0"><strong>Arquitetura & Nuvem</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Diagnóstico técnico e governança operacional de instâncias EC2 e bancos RDS. Implementação de políticas de acesso por menor privilégio e segurança de controle de acesso IAM.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">AWS EC2 / RDS</span>
+                <span class="badge-tech">IAM & Security</span>
+                <span class="badge-tech">Linux / SSH</span>
+                <span class="badge-tech">Docker</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-shield-alt text-primary me-1"></i> <strong>Resultado:</strong> Continuidade de serviços e estruturação de <strong>políticas IAM com MFA distribuído</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-red">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <span class="badge-case-tag tag-red">Segurança & LGPD</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Auxílio em Cibersegurança & Governança</h3>
+              <p class="text-muted small mb-0"><strong>Segurança da Informação & Governança</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Suporte na reestruturação da governança de acessos corporativos (IAM por perfil), alinhamento às boas práticas da LGPD, hardening de perímetro e proteção da reputação de e-mails corporativos.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">Cibersegurança</span>
+                <span class="badge-tech">Governança IAM</span>
+                <span class="badge-tech">Conformidade LGPD</span>
+                <span class="badge-tech">SPF / DKIM / DMARC</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-lock text-danger me-1"></i> <strong>Resultado:</strong> Aplicação do princípio de menor privilégio e reforço das salvaguardas de segurança da informação.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="case-card">
+            <div class="case-card-header">
+              <div class="d-flex justify-content-between align-items-start">
+                <div class="case-icon-wrapper bg-tech-green">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <span class="badge-case-tag tag-green">Integrações & APIs</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Auditoria & Integração de Sistemas via API</h3>
+              <p class="text-muted small mb-0"><strong>Integração & Low-Code</strong></p>
+            </div>
+            <div class="case-card-body">
+              <p class="small text-secondary mb-3">
+                Auditoria de rotinas de integração de dados entre sistemas corporativos. Rastreio de fluxos de negócio via inspeção de logs em Docker e fluxos automatizados no n8n para eliminar inconsistências.
+              </p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge-tech">REST APIs</span>
+                <span class="badge-tech">Python</span>
+                <span class="badge-tech">n8n Low-Code</span>
+                <span class="badge-tech">Docker Logs</span>
+              </div>
+              <div class="p-2 rounded bg-light border border-secondary-subtle small">
+                <i class="fas fa-check-circle text-success me-1"></i> <strong>Resultado:</strong> Correção de falhas de conciliação e garantia de integridade nas trocas de informações entre plataformas.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
- <section class="py-5 bg-white" id="conteudos">
-  <div class="container">
-    <h2 class="section-title">Meus Conteúdos</h2>
-    
-    <div class="row mb-5">
-      <div class="col-12 text-center mb-4">
-        <p class="lead">Compartilho experiências, devlogs e bate-papos sobre tecnologia e análise de dados através das minhas redes sociais.</p>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
-          <div class="d-flex align-items-center mb-3">
-            <div class="content-icon bg-primary text-white">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-            <h4 class="ms-3 mb-0">LinkedIn</h4>
-          </div>
-          
-          <p>Gosto de traduzir dados em histórias. Aqui compartilho aprendizados, ferramentas e projetos que me ajudam (e podem te ajudar também!) a entender o mundo com mais clareza.</p>
-          
-          <div class="text-center mt-4 mb-4">
-            <a href="https://www.linkedin.com/in/matheus-campos-it/recent-activity/shares/" target="_blank" class="linkedin-profile-link">
-              <div class="social-preview-container">
-                <img src="https://i.imgur.com/UWyDaKW.png" alt="Perfil LinkedIn" class="linkedin-preview-image img-fluid rounded shadow-sm" style="width: 100%; height: 280px; object-fit: cover;">
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <i class="fab fa-linkedin fa-3x mb-3"></i>
-                    <p>Ver publicações no LinkedIn</p>
+  <!-- Trajetória Profissional (Experiências) -->
+  <section class="py-5 bg-white" id="experiencias">
+    <div class="container">
+      <h2 class="section-title gradient-text text-center mb-5">Trajetória Profissional</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="experience-timeline">
+
+            <!-- Experience Item 1 -->
+            <div class="experience-item glass-card p-4 mb-4">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                <div>
+                  <h3 class="h5 text-primary fw-bold mb-1">
+                    Analista de Dados & Operações de TI 
+                    <span class="badge bg-primary ms-2 rounded-pill">inowatt</span>
+                  </h3>
+                  <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-1"></i> Itajubá, Minas Gerais, Brasil</p>
+                </div>
+                <span class="badge glass-pill text-dark fw-semibold mt-2 mt-sm-0">Novembro de 2025 - Presente</span>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <h4 class="h6 fw-bold text-dark mb-2"><i class="fas fa-cogs text-primary me-2"></i>Automação e Engenharia de Dados</h4>
+                    <p class="small text-muted mb-0">Substituição de processos manuais por pipelines em Python (Pandas), consumindo APIs REST multi-tenant para geração automatizada de relatórios (escalando de 12 para 133 relatórios/mês).</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <h4 class="h6 fw-bold text-dark mb-2"><i class="fas fa-chart-pie text-primary me-2"></i>BI & Visualização Analítica (Power BI)</h4>
+                    <p class="small text-muted mb-0">Normalização e higienização de fontes de dados heterogêneas para desenvolvimento de dashboards interativos no Power BI, entregando análises claras, objetivas e orientadas a KPIs.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <h4 class="h6 fw-bold text-dark mb-2"><i class="fas fa-database text-primary me-2"></i>Otimização de Bancos de Dados</h4>
+                    <p class="small text-muted mb-0">Troubleshooting de performance em bancos de dados relacionais em produção, reescrevendo consultas SQL complexas para otimizar tempos de resposta em tabelas de grande volume.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-3 bg-light rounded-3 h-100">
+                    <h4 class="h6 fw-bold text-dark mb-2"><i class="fas fa-shield-alt text-primary me-2"></i>Segurança, AWS & Governança</h4>
+                    <p class="small text-muted mb-0">Governança em infraestrutura AWS (EC2, RDS) com políticas de menor privilégio. Scripting em PowerShell/MS Graph API e adequação aos padrões de segurança e DNS (SPF/DKIM/DMARC).</p>
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-          
-          <div class="mt-4 text-center">
-            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="btn btn-outline-primary">
-              <i class="fab fa-linkedin me-2"></i>Seguir no LinkedIn
-            </a>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="experience-item glass-card p-4 mb-4">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                <div>
+                  <h3 class="h5 text-primary fw-bold mb-1">
+                    Analista de Dados 
+                    <span class="badge bg-secondary ms-2 rounded-pill">Data Mundo</span>
+                  </h3>
+                  <p class="text-muted small mb-0"><i class="fas fa-laptop-code me-1"></i> Remoto / Projetos Analíticos</p>
+                </div>
+                <span class="badge glass-pill text-dark fw-semibold mt-2 mt-sm-0">Julho de 2025 - Outubro de 2025</span>
+              </div>
+              <ul class="text-muted small mb-0">
+                <li class="mb-2">Atuação junto às áreas de negócio para levantamento de requisitos analíticos utilizando metodologias ágeis (Scrum).</li>
+                <li class="mb-2">Execução de processos ETL (Pentaho, SSIS, SQL) integrando múltiplas fontes para tratamento e carga de dados.</li>
+                <li>Desenvolvimento de dashboards interativos no Power BI, Tableau e Looker Studio para monitoramento de KPIs e OKRs estratégicos.</li>
+              </ul>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="experience-item glass-card p-4 mb-4">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                <div>
+                  <h3 class="h5 text-primary fw-bold mb-1">
+                    Analista de TI 
+                    <span class="badge bg-secondary ms-2 rounded-pill">Cabelauto Cabos Elétricos</span>
+                  </h3>
+                  <p class="text-muted small mb-0"><i class="fas fa-building me-1"></i> Itajubá, MG</p>
+                </div>
+                <span class="badge glass-pill text-dark fw-semibold mt-2 mt-sm-0">Abril de 2025 - Outubro de 2025</span>
+              </div>
+              <p class="text-muted small mb-0">
+                Elaboração de relatórios técnicos e dashboards gerenciais para apoiar a tomada de decisão estratégica. Monitoramento de métricas corporativas, otimização de SLAs e administração de backups focados em auditoria e conformidade de TI.
+              </p>
+            </div>
+
+            <!-- Experience Item 4 -->
+            <div class="experience-item glass-card p-4">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                <div>
+                  <h3 class="h5 text-primary fw-bold mb-1">
+                    Desenvolvedor Web Front-end 
+                    <span class="badge bg-secondary ms-2 rounded-pill">NeST Digital</span>
+                  </h3>
+                  <p class="text-muted small mb-0"><i class="fas fa-code me-1"></i> Desenvolvimento Web</p>
+                </div>
+                <span class="badge glass-pill text-dark fw-semibold mt-2 mt-sm-0">Janeiro de 2022 - Maio de 2023</span>
+              </div>
+              <p class="text-muted small mb-0">
+                Desenvolvimento de interfaces modernas, intuitivas e responsivas utilizando HTML5, CSS3, JavaScript e ecossistema WordPress (WooCommerce) com foco em experiência do usuário (UX/UI).
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Competências Técnicas & Stack -->
+  <section class="py-5 position-relative bg-light" id="habilidades">
+    <div class="glass-bg-blur"></div>
+    <div class="container position-relative z-index-1">
+      <h2 class="section-title gradient-text text-center mb-5">Stack & Competências Técnicas</h2>
       
-      <div class="col-md-6 mb-4">
-        <div class="content-card h-100 bg-light p-4 rounded shadow-sm">
-          <div class="d-flex align-items-center mb-3">
-            <div class="content-icon bg-danger text-white">
-              <i class="fab fa-youtube"></i>
-            </div>
-            <h4 class="ms-3 mb-0">YouTube</h4>
-          </div>
-          
-          <p>Compartilho o que aprendo sobre dados, programação e tecnologia com vídeos diretos, simples e feitos por quem também está em constante evolução.</p>
-          
-         <div class="text-center mt-4 mb-4">
-            <a href="https://www.youtube.com/@horian-dados/videos" target="_blank" class="youtube-channel-link"> <div class="social-preview-container">
-                <img src="https://i.imgur.com/uP90kWv.png" alt="Canal YouTube" class="youtube-preview-image img-fluid rounded shadow-sm" style="width: 100%; height: 280px; object-fit: cover;">
-                <div class="overlay">
-                  <div class="overlay-content">
-                    <i class="fab fa-youtube fa-3x mb-3 text-danger"></i>
-                    <p>Assistir vídeos no YouTube</p>
-                  </div>
-                </div>
+      <div class="row g-4">
+        <!-- IA Aplicada -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100 border border-primary-subtle">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-primary text-white rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-brain fa-lg"></i>
               </div>
-            </a>
+              <div>
+                <h3 class="h5 fw-bold mb-0">Inteligência Artificial (IA)</h3>
+                <span class="small text-muted">Engenharia & Automação</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Orquestração de Agentes IA</strong> para Eng. de Dados</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Engenharia de Prompt</strong> Avançada</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Claude</strong> (Skills, Memories, Organização)</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-primary me-2"></i><strong>Google Gemini</strong> (Workspace & IA Gerativa)</li>
+            </ul>
           </div>
-          
-          <div class="mt-4 text-center">
-            <a href="https://www.youtube.com/@horian-dados" target="_blank" class="btn btn-outline-danger"> <i class="fab fa-youtube me-2"></i>Inscrever-se no Canal
-            </a>
+        </div>
+
+        <!-- Bancos e Eng. de Dados -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-dark text-white rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-database fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-0">Bancos & Eng. de Dados</h3>
+                <span class="small text-muted">Pipelines & Performance</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i><strong>SQL Avançado</strong> (Otimização & Indexação)</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i><strong>MariaDB</strong> & <strong>PostgreSQL</strong></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-dark me-2"></i><strong>Python</strong> (Pandas, Consumo APIs REST)</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-dark me-2"></i><strong>ETL/ELT</strong> & Modelagem Multi-tenant</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BI & Análise -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-warning text-dark rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-chart-pie fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-0">BI & Business Analytics</h3>
+                <span class="small text-muted">Dashboards & KPIs</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Power BI</strong> & Linguagem <strong>DAX</strong></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Tableau</strong> & <strong>Looker Studio</strong></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>Data Storytelling & Apresentações</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-warning me-2"></i>Métricas de Desempenho (KPIs / OKRs)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Arquitetura & Cloud -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-info text-dark rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-server fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-0">Arquitetura & Infraestrutura</h3>
+                <span class="small text-muted">Cloud & Containers</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>AWS</strong> (EC2, IAM, S3, RDS)</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Docker</strong> & Containerização</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Linux</strong> (SSH, Shell/CLI Scripting)</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-info me-2"></i><strong>n8n</strong> (Automação Low-Code)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SecOps & Governança -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-danger text-white rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-user-shield fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-0">SecOps & Governança TI</h3>
+                <span class="small text-muted">Segurança & Conformidade</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><strong>Microsoft 365 / Entra ID</strong></li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><strong>PowerShell</strong> & Microsoft Graph API</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i>DNS E-mail (<strong>SPF / DKIM / DMARC</strong>)</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-danger me-2"></i><strong>LGPD</strong>, IAM & Resposta a Incidentes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ferramentas de Apoio -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success text-white rounded-3 p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="fas fa-tools fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h5 fw-bold mb-0">Ferramentas de Apoio</h3>
+                <span class="small text-muted">Produtividade & Versionamento</span>
+              </div>
+            </div>
+            <ul class="list-unstyled text-muted small mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i><strong>Notion</strong> (Advanced Workflows)</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i><strong>Excel Avançado</strong> (VBA / Fórmulas)</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i><strong>Git / GitHub</strong> (Versionamento)</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-success me-2"></i><strong>Cloudflare</strong> (WAF / Proxy / DNS)</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Formação Acadêmica & Certificações -->
   <section class="py-5 bg-white" id="formacao">
     <div class="container">
-      <h2 class="section-title">Formação Acadêmica</h2>
-      
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+      <div class="row g-5">
+        <!-- Formação Acadêmica -->
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold mb-4 text-primary"><i class="fas fa-graduation-cap me-2"></i>Formação Acadêmica</h2>
+          
           <div class="education-timeline">
-            <div class="education-item">
-              <div class="education-icon">
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <div class="education-content">
-                <div class="d-flex justify-content-between mb-2">
-                  <h5 class="text-primary mb-0">Pós-Graduação em Governança de TI</h5>
-                  <span class="badge bg-light text-dark">2024 - 2025</span>
-                </div>
-                <h6 class="text-muted">Universidade Cruzeiro do Sul</h6>
-                <p>Especialização com foco em gestão estratégica de TI, governança corporativa e alinhamento entre tecnologia e negócios. Desenvolvimento de competências em frameworks como ITIL, COBIT e gestão de riscos em tecnologia.</p>
-              </div>
-            </div>
-            
             <div class="education-item">
               <div class="education-icon">
                 <i class="fas fa-university"></i>
               </div>
               <div class="education-content">
-                <div class="d-flex justify-content-between mb-2">
-                  <h5 class="text-primary mb-0">Bacharelado em Sistemas de Informação</h5>
-                  <span class="badge bg-light text-dark">2017 - 2023</span>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h3 class="h5 text-primary fw-bold mb-0">Pós-Graduação em Governança de TI</h3>
+                  <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-1">2024 - 2025</span>
                 </div>
-                <h6 class="text-muted">Universidade Federal de Itajubá (UNIFEI)</h6>
-                <p>Formação completa em Sistemas de Informação com foco em desenvolvimento de software, análise de dados e gestão de projetos de tecnologia. Participação em projetos acadêmicos e atividades extracurriculares relacionadas à tecnologia da informação.</p>
+                <h4 class="h6 text-muted mb-2">Universidade Cruzeiro do Sul</h4>
+                <p class="small text-muted">
+                  Especialização focada em gestão estratégica de Tecnologia da Informação, governança corporativa, gestão de riscos, segurança da informação e alinhamento de processos tecnológicos aos objetivos de negócio.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <h3 class="h5 text-primary fw-bold mb-0">Bacharelado em Sistemas de Informação</h3>
+                  <span class="badge bg-secondary-subtle text-dark rounded-pill px-3 py-1">2017 - 2023</span>
+                </div>
+                <h4 class="h6 text-muted mb-2">Universidade Federal de Itajubá (UNIFEI)</h4>
+                <p class="small text-muted">
+                  Formação sólida em Ciência da Computação, desenvolvimento de software, modelagem de banco de dados relacional e não-relacional, arquitetura de sistemas e engenharia de dados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificações & Reconhecimentos -->
+        <div class="col-lg-6">
+          <h2 class="h3 fw-bold mb-4 text-primary"><i class="fas fa-award me-2"></i>Certificações & Reconhecimentos</h2>
+          
+          <div class="d-flex flex-column gap-3">
+            <!-- Google Ambassador Card -->
+            <div class="cert-card-notion border-start border-4 border-danger">
+              <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center justify-content-center bg-white rounded-circle p-2 shadow-sm" style="width: 44px; height: 44px;">
+                  <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                </div>
+                <div>
+                  <h3 class="h6 fw-bold mb-1">Estudante Embaixador do Google no Brasil</h3>
+                  <span class="badge bg-danger text-white rounded-pill">Agosto - Dezembro de 2026</span>
+                  <p class="small text-muted mt-2 mb-0">Imersão prática focada em liderança digital e inovações com IA (Gemini) no ecossistema Google Workspace.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Notion Advanced -->
+            <div class="cert-card-notion border-start border-4 border-dark">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fab fa-notion fa-2x text-dark"></i>
+                  <div>
+                    <h3 class="h6 fw-bold mb-0">Notion Academy: Advanced</h3>
+                    <span class="small text-muted">Notion Certified</span>
+                  </div>
+                </div>
+                <span class="badge bg-light text-dark border">Abril / 2026</span>
+              </div>
+            </div>
+
+            <!-- Notion Workflows -->
+            <div class="cert-card-notion border-start border-4 border-dark">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fab fa-notion fa-2x text-dark"></i>
+                  <div>
+                    <h3 class="h6 fw-bold mb-0">Notion Academy: Workflows</h3>
+                    <span class="small text-muted">Notion Certified</span>
+                  </div>
+                </div>
+                <span class="badge bg-light text-dark border">Abril / 2026</span>
+              </div>
+            </div>
+
+            <!-- Notion Essentials -->
+            <div class="cert-card-notion border-start border-4 border-dark">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fab fa-notion fa-2x text-dark"></i>
+                  <div>
+                    <h3 class="h6 fw-bold mb-0">Notion Academy: Essentials</h3>
+                    <span class="small text-muted">Notion Certified</span>
+                  </div>
+                </div>
+                <span class="badge bg-light text-dark border">Março / 2026</span>
               </div>
             </div>
           </div>
@@ -251,152 +708,129 @@
       </div>
     </div>
   </section>
- 
-  <section class="py-5 position-relative" id="experiencias">
-    <div class="glass-bg-blur variant-2"></div>
-    <div class="container position-relative z-index-1">
-      <h2 class="section-title gradient-text">Trajetória Profissional</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <div class="experience-timeline">
-            
-            <div class="experience-item glass-card p-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="text-primary fw-bold mb-0">Analista de Dados <span class="badge bg-primary ms-2 rounded-pill">inowatt</span></h5>
-                <span class="badge glass-pill text-dark">Nov 2025 - Presente</span>
-              </div>
-              <p class="mb-3 text-muted">Construção e manutenção da infraestrutura de dados da holding Inowatt (setor de energia).</p>
-              <ul class="text-muted small">
-                <li><strong>Engenharia de Dados (ETL/ELT):</strong> Planejamento e execução de pipelines de dados de diversas fontes via SQL.</li>
-                <li><strong>Modelagem & Governança:</strong> Manutenção e aplicação de boas práticas em bases de dados.</li>
-                <li><strong>BI:</strong> Suporte analítico traduzindo dados em insights via Power BI e Notion.</li>
-                <li><strong>Monitoramento:</strong> Acompanhamento proativo de fluxos operacionais e microserviços.</li>
-              </ul>
-            </div>
 
-            <div class="experience-item glass-card p-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="text-primary fw-bold mb-0">Analista de Dados <span class="badge bg-secondary ms-2 rounded-pill">Data Mundo</span></h5>
-                <span class="badge glass-pill text-dark">Jul 2025 - Out 2025</span>
-              </div>
-              <ul class="text-muted small mt-2">
-                <li>Atuação com a área de negócios para requisitos analíticos e metodologias ágeis (Scrum).</li>
-                <li>Processos ETL (Pentaho, SSIS, SQL) e integração de múltiplas fontes.</li>
-                <li>Desenvolvimento de dashboards interativos (Power BI, Tableau, Data Studio).</li>
-                <li>Criação de indicadores (KPIs/OKRs) e aplicação de boas práticas LGPD.</li>
-              </ul>
+  <!-- Repositórios e Projetos GitHub -->
+  <section class="py-5 bg-light" id="projetos">
+    <div class="container text-center">
+      <span class="badge bg-primary px-3 py-2 rounded-pill text-uppercase">Portfólio de Código</span>
+      <h2 class="section-title gradient-text mt-2 mb-4">Projetos & Repositórios GitHub</h2>
+      
+      <div class="glass-card p-4 p-md-5 mx-auto shadow-sm" style="max-width: 750px; border-radius: 1.25rem;">
+        <i class="fab fa-github fa-4x mb-3 text-primary"></i>
+        <h3 class="h4 mb-3 fw-bold">Explore Meus Repositórios de Código</h3>
+        <p class="text-muted mb-4">
+          Todos os meus projetos práticos de Engenharia de Dados, scripts de automação em Python, análises SQL e experimentos com IA gerativa estão centralizados e abertos para consulta no GitHub.
+        </p>
+
+        <div class="row g-3 mb-4 text-start">
+          <div class="col-md-6">
+            <div class="p-3 bg-light rounded border">
+              <h4 class="h6 fw-bold mb-1"><i class="fas fa-gamepad text-primary me-2"></i>O Que Jogar Hoje?</h4>
+              <p class="small text-muted mb-0">Sistema de recomendação de jogos utilizando Python (RAWG API) e visualizações em Power BI.</p>
             </div>
-            
-            <div class="experience-item glass-card p-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="text-primary fw-bold mb-0">Analista de TI <span class="badge bg-secondary ms-2 rounded-pill">Cabelauto</span></h5>
-                <span class="badge glass-pill text-dark">Abr 2025 - Out 2025</span>
-              </div>
-              <p class="text-muted small mt-2">Suporte técnico corporativo, manutenção de redes, implantação de rotinas de backup, auditoria de dados e desenvolvimento de relatórios técnicos/dashboards gerenciais.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 bg-light rounded border">
+              <h4 class="h6 fw-bold mb-1"><i class="fas fa-flask text-primary me-2"></i>Mathecas.Lab</h4>
+              <p class="small text-muted mb-0">Laboratório pessoal de prototipagem e experimentação tecnológica contínua com Python e IA.</p>
             </div>
-            
-            <div class="experience-item glass-card p-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="text-primary fw-bold mb-0">Desenvolvedor Front-end <span class="badge bg-secondary ms-2 rounded-pill">NeST Digital</span></h5>
-                <span class="badge glass-pill text-dark">Jan 2022 - Mai 2023</span>
-              </div>
-              <p class="text-muted small mt-2">Interfaces modernas, responsivas e focadas em UX/UI utilizando HTML, CSS, JavaScript e ecossistema WordPress (WooCommerce).</p>
-            </div>
-            
           </div>
         </div>
+
+        <a href="https://github.com/matheuscampos-it" target="_blank" rel="noopener" class="btn btn-primary px-5 py-3 animated-btn glass-btn rounded-pill fw-bold">
+          <i class="fab fa-github me-2"></i>Acessar Perfil no GitHub (github.com/matheuscampos-it)
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="py-5" id="habilidades">
+  <!-- Meus Conteúdos (LinkedIn / YouTube - Mathecas) -->
+  <section class="py-5 bg-white" id="conteudos">
     <div class="container">
-      <h2 class="section-title gradient-text">Stack & Habilidades</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="glass-card p-4 h-100">
-            <h3 class="h5 mb-4 fw-bold"><i class="fas fa-database text-primary me-2"></i>Engenharia & Análise de Dados</h3>
-            
-            <div class="mb-4">
-              <h6 class="fw-bold text-muted mb-2">Ferramentas de BI</h6>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary px-3 py-2">Power BI</span>
-                <span class="badge bg-info text-dark px-3 py-2">Tableau</span>
-                <span class="badge bg-warning text-dark px-3 py-2">Looker Studio</span>
-                <span class="badge bg-light text-dark border px-3 py-2">Notion</span>
+      <h2 class="section-title gradient-text text-center mb-3">Meus Conteúdos</h2>
+      <p class="text-center text-muted lead mb-5">Compartilho visões práticas, devlogs e lições sobre dados, tecnologia e cultura gamer através das redes.</p>
+      
+      <div class="row g-4 d-flex align-items-stretch">
+        <!-- LinkedIn Card -->
+        <div class="col-md-6 d-flex">
+          <div class="glass-card w-100 p-4 p-md-5 rounded-4 shadow-sm border-top border-4 border-primary d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="content-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 46px; height: 46px; font-size: 1.25rem;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div>
+                    <h3 class="h4 mb-0 fw-bold">LinkedIn</h3>
+                    <span class="small text-muted">Rede Profissional & Artigos</span>
+                  </div>
+                </div>
+                <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-1 fw-bold" style="font-size: 0.75rem;">Devlogs & Carreira</span>
               </div>
+              
+              <p class="text-muted small mb-4" style="line-height: 1.6;">
+                Artigos técnicos, conquistas como Google Student Ambassador e reflexões diárias sobre engenharia de dados, SecOps, otimizações SQL e IA gerativa aplicadas aos negócios.
+              </p>
+              
+              <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" rel="noopener" class="text-decoration-none">
+                <div class="content-banner-card content-banner-linkedin mb-4">
+                  <i class="fab fa-linkedin banner-icon"></i>
+                  <div class="banner-title">Matheus Campos no LinkedIn</div>
+                  <div class="banner-tags">
+                    <span class="banner-tag">#GoogleAmbassador</span>
+                    <span class="banner-tag">#DataEngineering</span>
+                    <span class="banner-tag">#SecOps</span>
+                  </div>
+                </div>
+              </a>
             </div>
             
-            <div class="mb-4">
-              <h6 class="fw-bold text-muted mb-2">Banco & Engenharia</h6>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-dark px-3 py-2">SQL Avançado</span>
-                <span class="badge bg-secondary px-3 py-2">PostgreSQL</span>
-                <span class="badge bg-success px-3 py-2">ETL/ELT (Pentaho, SSIS)</span>
-                <span class="badge bg-danger px-3 py-2">Modelagem</span>
-              </div>
-            </div>
-            
-            <div class="mb-4">
-              <h6 class="fw-bold text-muted mb-2">Arquitetura</h6>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary px-3 py-2">Governança de Dados</span>
-                <span class="badge bg-dark px-3 py-2">Versionamento</span>
-                <span class="badge bg-secondary px-3 py-2">Microserviços</span>
-              </div>
-            </div>
-            
-            <div class="mb-0">
-              <h6 class="fw-bold text-muted mb-2">Processos & Governança</h6>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-success px-3 py-2">LGPD</span>
-                <span class="badge bg-info text-dark px-3 py-2">Scrum</span>
-                <span class="badge bg-warning text-dark px-3 py-2">Kanban</span>
-              </div>
+            <div class="text-center pt-2">
+              <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" rel="noopener" class="btn btn-primary w-100 py-2.5 rounded-pill fw-bold animated-btn">
+                <i class="fab fa-linkedin me-2"></i>Conectar no LinkedIn
+              </a>
             </div>
           </div>
         </div>
         
-        <div class="col-md-6">
-          <div class="glass-card p-4 mb-4">
-            <h3 class="h5 mb-4 fw-bold"><i class="fas fa-brain text-primary me-2"></i>Soft Skills & Business</h3>
-            <div class="row g-3">
-              <div class="col-6">
-                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
-                  <i class="fas fa-users-cog skill-icon mb-2"></i>
-                  <span class="fw-semibold small">Governança de TI</span>
+        <!-- YouTube Card: Mathecas -->
+        <div class="col-md-6 d-flex">
+          <div class="glass-card w-100 p-4 p-md-5 rounded-4 shadow-sm border-top border-4 border-danger d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="content-icon bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 46px; height: 46px; font-size: 1.25rem;">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                  <div>
+                    <h3 class="h4 mb-0 fw-bold">Mathecas (YouTube)</h3>
+                    <span class="small text-muted">Canal Oficial de Tech & Games</span>
+                  </div>
                 </div>
+                <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-1 fw-bold" style="font-size: 0.75rem;">High Performance</span>
               </div>
-              <div class="col-6">
-                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
-                  <i class="fas fa-project-diagram skill-icon mb-2"></i>
-                  <span class="fw-semibold small">Metodologias Ágeis</span>
+              
+              <p class="text-muted small mb-4" style="line-height: 1.6;">
+                Ponto de encontro entre alta performance, análise de dados, cultura gamer e o dia a dia de quem respira tecnologia. Onde a mentalidade lógica de dados encontra a paixão por hardware e games.
+              </p>
+              
+              <a href="https://www.youtube.com/@mathecas" target="_blank" rel="noopener" class="text-decoration-none">
+                <div class="content-banner-card content-banner-youtube mb-4">
+                  <i class="fab fa-youtube banner-icon"></i>
+                  <div class="banner-title">Canal Mathecas no YouTube</div>
+                  <div class="banner-tags">
+                    <span class="banner-tag">#HardwareCustom</span>
+                    <span class="banner-tag">#SetupsImersivos</span>
+                    <span class="banner-tag">#CulturaGamer</span>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6">
-                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
-                  <i class="fas fa-chart-line skill-icon mb-2"></i>
-                  <span class="fw-semibold small">Indicadores (KPIs/OKRs)</span>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="skill-item-glass text-center p-3 rounded-3 h-100 d-flex flex-column justify-content-center">
-                  <i class="fas fa-bullhorn skill-icon mb-2"></i>
-                  <span class="fw-semibold small">Liderança Digital</span>
-                </div>
-              </div>
+              </a>
             </div>
-          </div>
-
-          <div class="glass-card p-4 position-relative overflow-hidden border border-primary">
-            <div class="position-absolute top-0 end-0 p-3 opacity-25">
-              <i class="fas fa-robot fa-4x text-primary"></i>
-            </div>
-            <h3 class="h5 mb-3 fw-bold text-primary position-relative z-1"><i class="fas fa-magic me-2"></i>Inteligência Artificial Aplicada</h3>
-            <p class="text-muted small mb-3 position-relative z-1">Uso avançado de IAs para aumento de produtividade, estruturação complexa de dados e automação de fluxos.</p>
-            <div class="d-flex flex-wrap gap-2 position-relative z-1">
-              <span class="badge bg-dark px-3 py-2"><i class="fas fa-bolt text-warning me-1"></i> Claude (Skills & Memories)</span>
-              <span class="badge bg-dark px-3 py-2"><i class="fas fa-sparkles text-primary me-1"></i> Google Gemini</span>
+            
+            <div class="text-center pt-2">
+              <a href="https://www.youtube.com/@mathecas" target="_blank" rel="noopener" class="btn btn-danger w-100 py-2.5 rounded-pill fw-bold animated-btn">
+                <i class="fab fa-youtube me-2"></i>Inscrever-se no Canal Mathecas
+              </a>
             </div>
           </div>
         </div>
@@ -404,12 +838,15 @@
     </div>
   </section>
 
-  <section class="py-5" id="contato">
+  <!-- Contato -->
+  <section class="py-5 bg-light" id="contato">
     <div class="container">
-      <h2 class="section-title">Contato</h2>
+      <h2 class="section-title gradient-text text-center mb-3">Entre em Contato</h2>
+      <p class="text-center text-muted lead mb-5">Tem um projeto, oportunidade ou deseja bater um papo sobre dados e tecnologia? Envie uma mensagem!</p>
+
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="bg-white p-4 rounded shadow-sm">
+          <div class="glass-card p-4 p-md-5 rounded-4 shadow-sm">
             <form id="contactForm" method="post" action="https://formsubmit.co/campos98matheus@gmail.com">
               <input type="hidden" name="_next" value="https://matheuscampos-it.github.io/matheuscampos/">
               <input type="hidden" name="_subject" value="Novo contato do seu portfólio">
@@ -417,25 +854,27 @@
               <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei o mais breve possível.">
               <input type="hidden" name="_template" value="table">
               
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="name" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label fw-semibold">Nome</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo" required>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
-                </div>
-                <div class="col-12 mb-3">
-                  <label for="subject" class="form-label">Assunto</label>
-                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem" required>
-                </div>
-                <div class="col-12 mb-3">
-                  <label for="message" class="form-label">Mensagem</label>
-                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-semibold">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary px-4 py-2 animated-btn">Enviar Mensagem</button>
+                  <label for="subject" class="form-label fw-semibold">Assunto</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label fw-semibold">Mensagem</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary px-5 py-3 animated-btn glass-btn rounded-pill fw-bold">
+                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                  </button>
                 </div>
               </div>
             </form>
@@ -445,509 +884,90 @@
     </div>
   </section>
 
+  <!-- Rodapé -->
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <h4 class="h5 mb-3">Sobre Mim</h4>
-          <p>Profissional de Tecnologia da Informação com formação em Sistemas de Informação e pós-graduação em Governança de TI. Atua com foco em Análise de Dados, unindo conhecimentos em Python, SQL, Power BI e Excel para transformar dados em insights estratégicos. Possui projetos autorais voltados a esportes e games, além de criar conteúdos educativos sobre dados com uma abordagem criativa e visual. Busca oportunidades que unam tecnologia, análise e comunicação clara de resultados.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3 class="h5 mb-3 fw-bold">Matheus Campos Sousa</h3>
+          <p class="small mb-0" style="line-height: 1.7;">
+            Analista e Engenheiro de Dados com formação em Sistemas de Informação (UNIFEI) e Pós-graduação em Governança de TI. Especialista na condução de otimização de bancos de dados em produção, pipelines de engenharia de dados, dashboards em Power BI, SecOps e ecossistema Google Workspace como Estudante Embaixador do Google.
+          </p>
         </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h4 class="h5 mb-3">Links Rápidos</h4>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#sobre" class="text-decoration-none text-light">Sobre</a></li>
-            <li class="mb-2"><a href="#projetos" class="text-decoration-none text-light">Projetos</a></li>
-            <li class="mb-2"><a href="#conteudos" class="text-decoration-none text-light">Conteúdos</a></li>
-            <li class="mb-2"><a href="#experiencias" class="text-decoration-none text-light">Experiências</a></li>
-            <li class="mb-2"><a href="#habilidades" class="text-decoration-none text-light">Habilidades</a></li>
-            <li><a href="#contato" class="text-decoration-none text-light">Contato</a></li>
+        <div class="col-md-3">
+          <h3 class="h5 mb-3 fw-bold">Navegação</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#sobre" class="text-decoration-none">Sobre</a></li>
+            <li class="mb-2"><a href="#cases" class="text-decoration-none">Cases</a></li>
+            <li class="mb-2"><a href="#experiencias" class="text-decoration-none">Trajetória</a></li>
+            <li class="mb-2"><a href="#habilidades" class="text-decoration-none">Habilidades</a></li>
+            <li class="mb-2"><a href="#formacao" class="text-decoration-none">Formação</a></li>
+            <li><a href="#contato" class="text-decoration-none">Contato</a></li>
           </ul>
         </div>
         <div class="col-md-3">
-          <h4 class="h5 mb-3">Redes Sociais</h4>
-          <div class="d-flex">
-            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/matheuscampos-it" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            </div>
+          <h3 class="h5 mb-3 fw-bold">Redes Sociais</h3>
+          <div class="d-flex gap-2">
+            <a href="https://www.linkedin.com/in/matheus-campos-it/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/matheuscampos-it" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@mathecas" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
       </div>
-      <hr class="my-4 bg-light opacity-25">
-      <div class="text-center">
-        <p class="mb-0">© 2025 Matheus Campos Sousa. Todos os direitos reservados.</p>
+      <hr class="my-4">
+      <div class="text-center small">
+        <p class="mb-0">© 2026 Matheus Campos. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <a href="#top" class="scroll-up"><i class="fas fa-arrow-up"></i></a>
+  <!-- Scroll Back to Top Button -->
+  <a href="#top" class="scroll-up" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
 
+  <!-- JavaScript Libraries & Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
       });
-    });
-    
-    // Show/hide scroll to top button
-    const scrollUp = document.querySelector('.scroll-up');
-    if (scrollUp) {
+
+      // Scroll to Top visibility
+      const scrollUp = document.querySelector('.scroll-up');
+      if (scrollUp) {
         window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                scrollUp.classList.add('visible');
-            } else {
-                scrollUp.classList.remove('visible');
-            }
-        });
-    }
-  });
-
-  // Código para o carrossel de projetos
-  document.addEventListener('DOMContentLoaded', function() {
-    const projectSlider = document.getElementById('projectsSlider');
-    const prevProject = document.getElementById('prevProject');
-    const nextProject = document.getElementById('nextProject');
-    
-    if (!projectSlider || !prevProject || !nextProject) return; // Abort if elements are not found
-
-    const projectItems = projectSlider.querySelectorAll('.project-item');
-    if (projectItems.length === 0) return; // Abort if no project items
-
-    let currentIndex = 0;
-    let projectsShown = 3;
-    const totalProjects = projectItems.length;
-    
-    function updateProjectsShown() {
-      if (window.innerWidth < 768) {
-        projectsShown = 1;
-      } else if (window.innerWidth < 992) {
-        projectsShown = 2;
-      } else {
-        projectsShown = 3;
-      }
-      
-      if (currentIndex > totalProjects - projectsShown) {
-        currentIndex = totalProjects - projectsShown;
-        if (currentIndex < 0) currentIndex = 0;
-      }
-       // Hide/show navigation buttons based on total projects and shown projects
-        if (totalProjects <= projectsShown) {
-            prevProject.style.display = 'none';
-            nextProject.style.display = 'none';
-        } else {
-            prevProject.style.display = 'flex';
-            nextProject.style.display = 'flex';
-        }
-      updateCarouselVisuals();
-    }
-    
-    function moveCarousel(direction) {
-      if (totalProjects <= projectsShown) return; // No need to move if all items are visible
-
-      if (direction === 'next') {
-        if (currentIndex < totalProjects - projectsShown) {
-          currentIndex++;
-        } else {
-          currentIndex = 0; 
-        }
-      } else { // prev
-        if (currentIndex > 0) {
-          currentIndex--;
-        } else {
-          currentIndex = totalProjects - projectsShown; 
-          if (currentIndex < 0) currentIndex = 0;
-        }
-      }
-      updateCarouselVisuals();
-    }
-    
-    function updateCarouselVisuals() {
-        if (projectItems.length === 0) return;
-        const itemWidthPercentage = 100 / projectsShown;
-        
-        projectItems.forEach(item => {
-            item.style.flex = `0 0 ${itemWidthPercentage}%`;
-            item.style.maxWidth = `${itemWidthPercentage}%`;
-        });
-
-        const offsetPercentage = -currentIndex * itemWidthPercentage;
-        projectSlider.style.transform = `translateX(${offsetPercentage}%)`;
-    }
-    
-    prevProject.addEventListener('click', () => moveCarousel('prev'));
-    nextProject.addEventListener('click', () => moveCarousel('next'));
-    
-    window.addEventListener('resize', () => {
-      updateProjectsShown();
-    });
-    
-    updateProjectsShown(); // Initial call
-  });
-
-  // Script para verificar e corrigir problemas com imagens
-  document.addEventListener('DOMContentLoaded', function() {
-    const profilePic = document.querySelector('.profile-pic img');
-    if (profilePic) {
-      profilePic.onerror = function() {
-        console.log('Erro ao carregar imagem de perfil, tentando fallback.');
-        this.onerror = null; 
-        this.src = 'https://i.imgur.com/heJxybF.png'; 
-        
-        this.onerror = function() { // If fallback also fails
-          console.log('Fallback da imagem de perfil falhou. Mostrando iniciais.');
-          this.style.display = 'none';
-          const parentDiv = this.parentElement;
-          parentDiv.style.display = 'flex';
-          parentDiv.style.alignItems = 'center';
-          parentDiv.style.justifyContent = 'center';
-          parentDiv.innerHTML = 'MC'; 
-        };
-      };
-    }
-    
-    const socialImages = document.querySelectorAll('.linkedin-preview-image, .youtube-preview-image');
-    socialImages.forEach(img => {
-      img.onerror = function() {
-        console.log('Erro ao carregar imagem social:', this.src);
-        const originalSrc = this.src; // Keep original src for potential retry
-        this.onerror = null;
-        
-        let fallbackSrc = '';
-        if (this.classList.contains('linkedin-preview-image')) {
-          fallbackSrc = 'https://i.imgur.com/UWyDaKW.png';
-        } else if (this.classList.contains('youtube-preview-image')) {
-          fallbackSrc = 'https://i.imgur.com/uP90kWv.png';
-        }
-
-        if (fallbackSrc && this.src !== fallbackSrc) { // Avoid infinite loop if fallback is the same
-            this.src = fallbackSrc;
-        }
-        
-        this.onerror = function() { // If direct fallback also fails
-          console.log('Fallback da imagem social falhou. Mostrando placeholder colorido.');
-          const placeholder = document.createElement('div');
-          placeholder.style.width = '100%';
-          placeholder.style.height = this.style.height || '280px'; // Use existing height or default
-          placeholder.style.display = 'flex';
-          placeholder.style.alignItems = 'center';
-          placeholder.style.justifyContent = 'center';
-          placeholder.style.color = 'white';
-          placeholder.style.fontSize = '1.5rem';
-          placeholder.style.borderRadius = 'inherit'; // Inherit border-radius from parent container
-          
-          if (this.classList.contains('linkedin-preview-image')) {
-            placeholder.style.backgroundColor = '#0077B5'; // LinkedIn blue
-            placeholder.innerHTML = '<i class="fab fa-linkedin fa-3x"></i>';
+          if (window.pageYOffset > 300) {
+            scrollUp.classList.add('visible');
           } else {
-            placeholder.style.backgroundColor = '#FF0000'; // YouTube red
-            placeholder.innerHTML = '<i class="fab fa-youtube fa-3x"></i>';
+            scrollUp.classList.remove('visible');
           }
-          
-          if(this.parentElement) {
-            this.parentElement.replaceChild(placeholder, this);
-          }
-        };
-      };
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const projectsData = {
-      'mathecasLab': {
-        title: 'Mathecas.Lab',
-        description: `
-          <p>Mathecas.Lab is my personal space for experimentation and developing creative ideas in the world of technology. Here, I explore new tools, build prototypes, and bring various projects to life, from small utilities to more elaborate concepts. This lab is where ideas like "The Cosmic Sloth Oracle," "Accidental Melody Composer," and others might take shape!</p>
-          <div class="project-section mt-4">
-            <h5>Objective</h5>
-            <p>The main goal of Mathecas.Lab is to be a playground for continuous learning and practical application of technologies like React for the front-end and Node.js for the back-end, aligning with my development stack preferences. It's a space to test, fail, learn, and evolve.</p>
-          </div>
-          <div class="mt-4">
-            <h5>Commonly Used Technologies</h5>
-            <ul>
-              <li><strong>Front-end:</strong> React, JavaScript (ES6+), HTML5, CSS3</li>
-              <li><strong>Back-end:</strong> Node.js, Express.js</li>
-              <li><strong>Other Tools:</strong> Git</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Mathecas.Lab+Main+View',
-          'https://via.placeholder.com/800x450/C8A85B/000000?text=Lab+Experiment+Alpha',
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Concept+Development'
-        ],
-        demoLink: '#', // Atualize este link
-        githubLink: '#' // Atualize este link
-      },
-      'projeto1': {
-        title: 'O Que Jogar Hoje?',
-        description: `
-          <p>Um sistema de recomendação de jogos inteligente que ajuda usuários a descobrirem novos títulos com base em seus gostos, tempo disponível e plataformas que possuem.</p>
-          <div class="project-section mt-4">
-            <h5>Problema</h5>
-            <p>Com milhares de jogos lançados todos os anos, muitos gamers enfrentam o "paradoxo da escolha" - ter tantas opções que acaba sendo difícil decidir o que jogar. Além disso, muitos não têm tempo para pesquisar e comparar jogos que realmente se encaixem nas suas preferências.</p>
-          </div>
-          <div class="project-section mt-4">
-            <h5>Solução</h5>
-            <p>Criei um sistema que combina:</p>
-            <ul>
-              <li>Extração e processamento de dados da RAWG API (uma das maiores bases de dados de jogos)</li>
-              <li>Algoritmos de filtragem baseados em gênero, duração média, avaliações e plataformas</li>
-              <li>Interface visual intuitiva com Power BI para exploração e descoberta de jogos</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h5>Tecnologias Utilizadas</h5>
-            <ul>
-              <li><strong>Python:</strong> Pandas para manipulação de dados, Requests para chamadas à API</li>
-              <li><strong>Power BI:</strong> Para a criação do dashboard interativo e visualizações</li>
-              <li><strong>API:</strong> Integração com a RAWG Game Database API</li>
-              <li><strong>Git/GitHub:</strong> Controle de versão e hospedagem do código</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'images/projeto/ChatGPT Image 6 de mai. de 2025, 19_24_06.png', // Manter imagem existente
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=O+Que+Jogar+Hoje+Interface',
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Detalhe+do+Dashboard'
-        ],
-        demoLink: '#',
-        githubLink: 'https://github.com/matheuscampos-it/OQueJogarHoje'
-      },
-      'projeto2': {
-        title: 'Dashboard de Vendas',
-        description: `
-          <p>Um dashboard corporativo completo para análise de vendas, com métricas chave de performance e visualizações interativas para tomada de decisão baseada em dados.</p>
-          <div class="project-section mt-4">
-            <h5>Problema</h5>
-            <p>Uma empresa de varejo estava com dificuldades para acompanhar o desempenho de vendas de forma consolidada, já que os dados estavam distribuídos em diferentes sistemas e planilhas. Isso resultava em atrasos na tomada de decisão e falta de visibilidade sobre tendências importantes.</p>
-          </div>
-          <div class="project-section mt-4">
-            <h5>Solução</h5>
-            <p>Desenvolvi um dashboard em Power BI que:</p>
-            <ul>
-              <li>Integra dados de múltiplas fontes (ERP, CRM, planilhas)</li>
-              <li>Apresenta KPIs essenciais (faturamento, margem, ticket médio)</li>
-              <li>Permite análises por produto, região, vendedor e período</li>
-              <li>Identifica padrões sazonais e oportunidades de crescimento</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h5>Tecnologias Utilizadas</h5>
-            <ul>
-              <li><strong>Power BI:</strong> Desenvolvimento do dashboard e visualizações</li>
-              <li><strong>DAX:</strong> Criação de métricas calculadas avançadas</li>
-              <li><strong>SQL:</strong> Consultas para extração de dados do banco relacional</li>
-              <li><strong>Power Query:</strong> ETL e modelagem de dados</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Sales+Dashboard+Overview',
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Sales+KPIs',
-          'https://via.placeholder.com/800x450/C8A85B/000000?text=Regional+Sales+Analysis'
-        ],
-        demoLink: '#',
-        githubLink: '#'
-      },
-      'projeto3': {
-        title: 'Sistema de Gestão',
-        description: `
-          <p>Um sistema web completo para gestão de estoque, clientes e fornecedores, com controle de acesso por níveis de usuário e relatórios automatizados.</p>
-          <div class="project-section mt-4">
-            <h5>Problema</h5>
-            <p>Uma empresa de médio porte estava gerenciando seus processos através de planilhas e anotações manuais, causando erros, inconsistências e dificuldade no acompanhamento do fluxo operacional.</p>
-          </div>
-          <div class="project-section mt-4">
-            <h5>Solução</h5>
-            <p>Desenvolvi um sistema web completo que:</p>
-            <ul>
-              <li>Centraliza o cadastro e gestão de produtos, clientes e fornecedores</li>
-              <li>Automatiza o controle de estoque com alertas de reposição</li>
-              <li>Gerencia pedidos e acompanha status de entrega</li>
-              <li>Gera relatórios personalizados para tomada de decisão</li>
-              <li>Controla acessos por níveis de permissão de usuários</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h5>Tecnologias Utilizadas</h5>
-            <ul>
-              <li><strong>Python:</strong> Linguagem base do projeto</li>
-              <li><strong>Django:</strong> Framework web para desenvolvimento</li>
-              <li><strong>PostgreSQL:</strong> Banco de dados relacional</li>
-              <li><strong>HTML/CSS/JavaScript:</strong> Frontend e interatividade</li>
-              <li><strong>Bootstrap:</strong> Framework CSS para interface responsiva</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Management+System+Login',
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Inventory+Module',
-          'https://via.placeholder.com/800x450/C8A85B/000000?text=Client+Dashboard'
-        ],
-        demoLink: '#',
-        githubLink: '#'
-      },
-      'projeto4': {
-        title: 'App de Finanças Pessoais',
-        description: `
-          <p>Aplicativo mobile para controle de finanças pessoais com categorização automática de gastos, estabelecimento de metas e análises visuais do comportamento financeiro.</p>
-          <div class="project-section mt-4">
-            <h5>Problema</h5>
-            <p>Muitas pessoas têm dificuldade em manter um controle efetivo de suas finanças, sem uma visão clara de para onde o dinheiro está indo e sem ferramentas práticas para criar e manter um orçamento.</p>
-          </div>
-          <div class="project-section mt-4">
-            <h5>Solução</h5>
-            <p>Desenvolvi um aplicativo mobile que:</p>
-            <ul>
-              <li>Permite registro rápido de receitas e despesas</li>
-              <li>Categoriza automaticamente transações com machine learning</li>
-              <li>Cria orçamentos e acompanha o progresso em tempo real</li>
-              <li>Gera relatórios e gráficos para visualização de padrões de gastos</li>
-              <li>Envia alertas e sugestões para melhorar a saúde financeira</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h5>Tecnologias Utilizadas</h5>
-            <ul>
-              <li><strong>React Native:</strong> Framework para desenvolvimento mobile</li>
-              <li><strong>Firebase:</strong> Autenticação, banco de dados e análises</li>
-              <li><strong>TensorFlow Lite:</strong> Machine learning para categorização</li>
-              <li><strong>Chart.js:</strong> Visualização de dados e gráficos</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=Finance+App+Home',
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Expense+Tracking',
-          'https://via.placeholder.com/800x450/C8A85B/000000?text=Budget+Goals'
-        ],
-        demoLink: '#',
-        githubLink: '#'
-      },
-      'projeto5': {
-        title: 'Web Scraper para E-commerce',
-        description: `
-          <p>Ferramenta automatizada para coleta e análise de dados de preços e produtos em sites de e-commerce, com alertas de ofertas personalizados.</p>
-          <div class="project-section mt-4">
-            <h5>Problema</h5>
-            <p>Consumidores frequentemente perdem promoções e descontos em produtos que desejam comprar por não terem tempo de verificar constantemente os preços em diferentes lojas online.</p>
-          </div>
-          <div class="project-section mt-4">
-            <h5>Solução</h5>
-            <p>Desenvolvi um sistema de web scraping que:</p>
-            <ul>
-              <li>Monitora preços de produtos em múltiplos e-commerces</li>
-              <li>Armazena histórico de preços para análise de tendências</li>
-              <li>Envia alertas por email quando o preço atinge um valor desejado</li>
-              <li>Gera relatórios comparativos entre lojas diferentes</li>
-              <li>Identifica padrões de descontos para prever melhores momentos de compra</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h5>Tecnologias Utilizadas</h5>
-            <ul>
-              <li><strong>Python:</strong> Linguagem principal do projeto</li>
-              <li><strong>Beautiful Soup/Selenium:</strong> Ferramentas de web scraping</li>
-              <li><strong>Pandas:</strong> Análise e manipulação de dados</li>
-              <li><strong>SQLite:</strong> Armazenamento do histórico de preços</li>
-              <li><strong>Matplotlib/Seaborn:</strong> Visualização de dados e gráficos</li>
-            </ul>
-          </div>
-        `,
-        images: [
-          'https://via.placeholder.com/800x450/9B8FB3/FFFFFF?text=E-commerce+Scraper+UI',
-          'https://via.placeholder.com/800x450/3E1F47/FFFFFF?text=Price+Tracking+Chart',
-          'https://via.placeholder.com/800x450/C8A85B/000000?text=Alert+Configuration'
-        ],
-        demoLink: '#',
-        githubLink: '#'
+        });
       }
-    };
 
-    document.querySelectorAll('.view-project').forEach(button => {
-      button.addEventListener('click', function() {
-        const projectId = this.getAttribute('data-project-id');
-        const projectData = projectsData[projectId];
-        
-        if (projectData) {
-          document.getElementById('projectModalLabel').textContent = projectData.title;
-          
-          let imagesHtml = `
-            <div id="projectDetailCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                ${projectData.images.map((img, i) => 
-                  `<button type="button" data-bs-target="#projectDetailCarousel" data-bs-slide-to="${i}" ${i === 0 ? 'class="active"' : ''} aria-current="${i === 0 ? 'true' : 'false'}" aria-label="Slide ${i+1}"></button>`
-                ).join('')}
-              </div>
-              <div class="carousel-inner rounded">
-                ${projectData.images.map((img, i) => 
-                  `<div class="carousel-item ${i === 0 ? 'active' : ''}">
-                    <img src="${img}" class="d-block w-100" alt="Image for ${projectData.title} ${i+1}">
-                  </div>`
-                ).join('')}
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#projectDetailCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#projectDetailCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          `;
-          
-          const modalContent = `
-            ${imagesHtml}
-            <div class="project-details">
-              ${projectData.description}
-            </div>
-          `;
-          
-          document.getElementById('projectModalBody').innerHTML = modalContent;
-          
-          const demoBtn = document.getElementById('projectLiveDemo');
-          const githubBtn = document.getElementById('projectGithub');
-          
-          demoBtn.href = projectData.demoLink;
-          githubBtn.href = projectData.githubLink;
-          
-          demoBtn.style.display = (!projectData.demoLink || projectData.demoLink === '#') ? 'none' : 'inline-block';
-          githubBtn.style.display = (!projectData.githubLink || projectData.githubLink === '#') ? 'none' : 'inline-block';
-        }
+      // Dark Mode Toggle
+      document.querySelectorAll('.theme-toggle-btn').forEach(button => {
+        button.addEventListener('click', function () {
+          document.body.classList.toggle('dark-mode');
+          const isDarkMode = document.body.classList.contains('dark-mode');
+          document.querySelectorAll('.theme-toggle-btn i').forEach(icon => {
+            if (isDarkMode) {
+              icon.classList.remove('fa-moon');
+              icon.classList.add('fa-sun');
+            } else {
+              icon.classList.remove('fa-sun');
+              icon.classList.add('fa-moon');
+            }
+          });
+        });
       });
     });
-  });
-
-  // Theme Toggle Script (Corrected)
-  document.querySelectorAll('.theme-toggle-btn').forEach(button => {
-      button.addEventListener('click', function () {
-          document.body.classList.toggle('dark-mode');
-          
-          const isDarkMode = document.body.classList.contains('dark-mode');
-          
-          // Toggle icons on all theme toggle buttons
-          document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
-              const icon = btn.querySelector('i');
-              if (icon) {
-                  if (isDarkMode) {
-                      icon.classList.remove('fa-moon');
-                      icon.classList.add('fa-sun');
-                  } else {
-                      icon.classList.remove('fa-sun');
-                      icon.classList.add('fa-moon');
-                  }
-              }
-          });
-      });
-  });
   </script>
 </body>
 </html>

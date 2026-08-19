@@ -1297,4 +1297,156 @@ body.dark-mode .tag-green { background-color: rgba(52, 168, 83, 0.25) !important
   border-radius: 50px;
   backdrop-filter: blur(4px);
   color: #ffffff;
+}
+
+/* ==========================================================================
+   SISTEMA COMPLETO DE RESPONSIVIDADE & PENTE FINO
+   ========================================================================== */
+
+/* Prevenção global de rolagem horizontal desnecessária */
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  position: relative;
+}
+
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tipografia Fluida */
+.section-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+}
+
+/* Ajustes de toque para dispositivos móveis */
+@media (max-width: 991.98px) {
+  .nav-item {
+    padding: 0.75rem 1rem !important;
+    font-size: 1rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: block;
+    width: 100%;
+  }
+  
+  body.dark-mode .nav-item {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .offcanvas-body {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+/* Telas Médias e Tablets (768px a 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .profile-pic {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .case-card-header {
+    padding: 1.25rem 1.25rem 0.5rem 1.25rem;
+  }
+  
+  .case-card-body {
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/* Dispositivos Móveis Padrão (até 767.98px) */
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .profile-pic {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  /* Botões empilhados no Hero e seções */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100% !important;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  /* Cards e padding reduzido para telas menores */
+  .glass-card, .case-card, .content-card {
+    padding: 1.25rem !important;
+  }
+
+  .content-banner-card {
+    padding: 1.25rem 1rem;
+    min-height: 160px;
+  }
+
+  .content-banner-card .banner-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-banner-card .banner-title {
+    font-size: 1rem;
+  }
+
+  /* Ajuste no timeline de experiências */
+  .experience-item {
+    padding-left: 2rem;
+  }
+
+  .experience-item::before {
+    left: -6px;
+  }
+
+  /* Badges responsivas */
+  .badge-case-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.65rem;
+  }
+}
+
+/* Telas Ultra Pequenas (Smartphones compactos < 380px) */
+@media (max-width: 379.98px) {
+  .profile-pic {
+    width: 190px;
+    height: 190px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .header-logo-wrapper svg, header img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .h4, h4 {
+    font-size: 1.15rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .badge {
+    font-size: 0.68rem !important;
+  }
 }
